@@ -5,6 +5,7 @@
 .contenedor-error {
   background: linear-gradient(135deg, #ffffff 0%, #f9fafb 100%);
   border-radius: 12px;
+  border-top: 4px solid #18283c;
   padding: 48px 32px;
   margin: 32px;
   text-align: center;
@@ -28,19 +29,6 @@
   background: rgba(239, 68, 68, 0.1);
   border-radius: 50%;
   padding: 12px;
-  animation: balanceo 2s ease-in-out infinite;
-}
-
-@keyframes balanceo {
-  0%, 100% {
-    transform: rotate(0deg);
-  }
-  25% {
-    transform: rotate(-5deg);
-  }
-  75% {
-    transform: rotate(5deg);
-  }
 }
 
 /* Mensaje de error */
@@ -51,7 +39,7 @@
 .titulo-error {
   font-size: 24px;
   font-weight: 700;
-  color: #1f2937;
+  color: #18283c;
   margin-bottom: 12px;
   letter-spacing: -0.5px;
 }
@@ -107,15 +95,14 @@
 }
 
 .btn-reintentar-principal {
-  background: linear-gradient(135deg, #0170c4 0%, #018BEB 100%);
+  background: linear-gradient(135deg, #18283c 0%, #24344a 100%);
   color: white;
-  box-shadow: 0 4px 12px rgba(1, 139, 235, 0.3);
+  box-shadow: 0 4px 12px rgba(24, 40, 60, 0.3);
 }
 
 .btn-reintentar-principal:hover {
-  background: linear-gradient(135deg, #019aff 0%, #33a3ef 100%);
-  transform: translateY(-2px);
-  box-shadow: 0 6px 16px rgba(1, 139, 235, 0.4);
+  background: linear-gradient(135deg, #24344a 0%, #2f4258 100%);
+  box-shadow: 0 6px 16px rgba(24, 40, 60, 0.4);
 }
 
 .btn-reintentar-secundario {

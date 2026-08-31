@@ -24,13 +24,10 @@ function ErrorDisplay({ mensaje, onReintentar, onVolver }) {
 
         {/* Mensaje de error */}
         <div className="mensaje-error">
-          <h3 className="titulo-error">Error al cargar los tiempos</h3>
+          <h3 className="titulo-error">Error al cargar los datos</h3>
           <p className="descripcion-error">
-            No se pudieron obtener los datos. 
+            Hubo un problema al conectar con el servidor. Probá reintentar en unos segundos.
           </p>
-          <div className="detalle-error">
-            <code>{mensaje}</code>
-          </div>
         </div>
 
         {/* Botones de acción */}
