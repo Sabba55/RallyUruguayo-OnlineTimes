@@ -52,9 +52,9 @@ function CabeceraDashboard({
 
     cargarInfoRally();
   }, []);
-
+//py-2
   return (
-    <header className="header-rally px-4"> //py-2
+    <header className="header-rally px-4"> 
       <div className="cabecera-rally-grid">
         <div className="cabecera-rally-col cabecera-rally-col--izq z-index">
           {mostrarBotonVolver ? (
