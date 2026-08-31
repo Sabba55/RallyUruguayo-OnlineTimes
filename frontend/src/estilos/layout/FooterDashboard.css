@@ -2,7 +2,7 @@
    PIE DE PÁGINA (FOOTER)
    =================================== */
 .footer-rally {
-  background: linear-gradient(135deg, #1a1a1a 0%, #1D1D1B 100%);
+  background: #111b28;;
   min-height: 80px;
 }
 
@@ -11,12 +11,32 @@
   z-index: 10; 
 }
 
+/* ===================================
+   FILA 1: LOGO + TÍTULO
+   =================================== */
+.footer-fila-marca {
+  flex-wrap: wrap;
+}
+
+.footer-columna {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.footer-logo-img {
+  height: 70px;
+  width: auto;
+  object-fit: contain;
+}
+
 .social-icon {
-  background: linear-gradient(135deg, #0170c4 0%, #018BEB 100%);
+  background: linear-gradient(135deg, rgb(185, 145, 70) 0%, rgb(160, 121, 54) 100%);  
   color: white;
   width: 40px;
   height: 40px;
-  border-radius: 50%;
+  border-radius: 20%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -25,9 +45,8 @@
 }
 
 .social-icon:hover {
-  background: linear-gradient(135deg, #019aff 0%, #33a3ef 100%);
-  transform: translateY(-2px);
-  box-shadow: 0 3px 10px rgba(1, 139, 235, 0.4);
+  background: linear-gradient(135deg, #2d2e2e 0%, #1b1b1b 100%);
+  box-shadow: 0 3px 10px rgba(255, 255, 255, 0.4);
 }
 
 .lineas-decorativas-superior {
@@ -39,6 +58,14 @@
   pointer-events: none;
   user-select: none;
   object-fit: cover;
+}
+
+.footer-linea-decorativa {
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(135deg, rgb(185, 145, 70) 0%, rgb(160, 121, 54) 100%);  
+  margin: 0 auto 15px auto;
+  border-radius: 5px;
 }
 
 /* ===================================

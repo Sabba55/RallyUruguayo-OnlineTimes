@@ -54,7 +54,7 @@ function CabeceraDashboard({
   }, []);
 
   return (
-    <header className="header-rally py-2 px-4">
+    <header className="header-rally px-4"> //py-2
       <div className="cabecera-rally-grid">
         <div className="cabecera-rally-col cabecera-rally-col--izq z-index">
           {mostrarBotonVolver ? (
@@ -66,8 +66,8 @@ function CabeceraDashboard({
             </button>
           ) : (
             <img
-              src="/assets/logo-rally-argentino.png"
-              alt="Logo Rally Argentino"
+              src="/assets/logo-rally-uruguayo.png"
+              alt="Logo Rally Uruguayo"
               className="logo-rally"
             />
           )}
