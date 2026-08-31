@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { obtenerTramosCarrera } from '../../servicios/apiService';
 import { useGlobalRefresh } from '../../context/GlobalRefreshContext';
-import SpinnerCarga from '../comunes/SpinnerCarga';
 import ErrorDisplay from '../errores/ErrorDisplay';
 
 function formatearHoraTramo(hora) {
@@ -130,7 +129,12 @@ function TablaTramos({ onVerTiemposPorClase = () => {}, onVerTiemposGeneral = ()
   };
 
   if (cargandoInicial) {
-    return <SpinnerCarga mensaje="Cargando tramos..." />;
+    return (
+      <div className="text-center py-5">
+        <div className="spinner-border" role="status" style={{ color: '#18283c' }}></div>
+        <p className="mt-3">Cargando tramos...</p>
+      </div>
+    );
   }
 
   if (error) {

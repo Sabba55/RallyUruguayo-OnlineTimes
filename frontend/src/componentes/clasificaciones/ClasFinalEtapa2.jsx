@@ -371,7 +371,7 @@ function ClasFinalEtapa2({ onVolver }) {
   if (cargandoInicial) {
     return (
       <div className="text-center py-5">
-        <div className="spinner-border text-primary" role="status"></div>
+        <div className="spinner-border" role="status" style={{ color: '#18283c' }}></div>
         <p className="mt-3">Cargando clasificación final de Etapa 2...</p>
       </div>
     );
