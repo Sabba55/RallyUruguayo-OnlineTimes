@@ -508,7 +508,7 @@ function ClasFinalGeneral({ onVolver }) {
                     Próxima actualización en:
                 </span>
                 <span 
-                    className="badge bg-primary d-flex align-items-center gap-1" 
+                    className="badge badge-contador bg-primary d-flex align-items-center gap-1" 
                     style={{ fontSize: '0.95rem', padding: '0.4rem 0.8rem' }}
                 >
                     <svg 

@@ -31,21 +31,6 @@
     width: 100%;
 }
 
-.btn-volver {
-  background: linear-gradient(135deg, #0170c4 0%, #018BEB 100%);
-  color: white;
-  font-weight: 600;
-  padding: 6px 20px;
-  border: none;
-  border-radius: 6px;
-  box-shadow: 0 2px 6px rgba(1,139,235,0.3);
-  transition: all 0.3s ease;
-}
-.btn-volver:hover {
-  background: linear-gradient(135deg, #019aff 0%, #33a3ef 100%);
-  transform: translateY(-2px);
-}
-
 /* ===================================
    TABLA DE CLASIFICACIÓN FINAL
    =================================== */
@@ -63,23 +48,23 @@
 }
 
 .tabla-encabezado-clas-final {
-    background: linear-gradient(135deg, #1a1a1a 0%, #2b2b2b 100%);
+  background: #111b28;
 }
 
 .tabla-encabezado-clas-final th {
-    color: white !important;
-    font-size: 13px;
-    font-weight: 700;
-    text-transform: uppercase;
-    padding: 16px 12px !important;
-    border: none !important;
-    vertical-align: middle !important;
-    background-color: transparent !important;
-    height: 70px !important;
+  color: white !important;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 16px 12px !important;
+  border: none !important;
+  vertical-align: middle !important;
+  background-color: transparent !important;
+  height: 70px !important;
 }
 
 .tabla-fila-datos-clas-final:hover td {
-  background-color: #e3f2fd !important;
+  background-color: rgba(211, 176, 109, 0.18) !important;
 }
 
 .tabla-fila-datos-clas-final td {
@@ -103,7 +88,7 @@
 }
 
 .badge-pos-clas-final {
-  background: linear-gradient(135deg, #0170c4 0%, #018BEB 100%);
+  background: linear-gradient(135deg, rgb(185, 145, 70) 0%, rgb(151, 117, 57) 100%);
   color: white;
   padding: 5px 10px;
   border-radius: 6px;
@@ -116,7 +101,9 @@
   font-weight: 700;
 }
 
-
+.badge-contador {
+  background: #111b28 !important;
+}
 
 /* ===================================
    CELDA DE NACIONALIDAD (APILADAS)

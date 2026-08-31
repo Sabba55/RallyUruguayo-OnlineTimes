@@ -6,7 +6,7 @@ import { BrowserRouter as Router, Routes, Route, useParams, useNavigate } from '
 import CabeceraDashboard from './componentes/layout/CabeceraDashboard';
 import FooterDashboard from './componentes/layout/FooterDashboard';
 import BotonesNavegacion from './componentes/layout/BotonesNavegacion';
-import TarjetaGanadores from './componentes/layout/TarjetaGanadores';
+// import TarjetaGanadores from './componentes/layout/TarjetaGanadores';
 
 // Tramos
 import TablaTramos from './componentes/tramos/TablaTramos';
@@ -72,7 +72,8 @@ function VistaInicio({ onNavegarClases, onNavegarGeneral, onNavegarEtapa2 }) {
         onVerTiemposGeneral={onNavegarGeneral}
         onVerTiemposEtapa2={onNavegarEtapa2}
       />
-      <TarjetaGanadores />
+      {/* Desactive las tarjetas de ganadores, para usarlo en otra ocasion */}
+      {/* <TarjetaGanadores /> */}
     </LayoutPrincipal>
   );
 }
