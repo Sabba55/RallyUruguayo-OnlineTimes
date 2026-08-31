@@ -385,7 +385,6 @@ function ClasFinalEtapa2({ onVolver }) {
     <div className="contenedor-clas-final-etapa2">
       {/* CABECERA CON ÍNDICES */}
       <div className="d-flex justify-content-center align-items-center mb-4 flex-column">
-        <h2 className="titulo-pe text-center mb-2">Índices de Categorías</h2>
         
         {/* BOTONES DE ÍNDICE - CAMPEONATO ARGENTINO */}
         {(() => {
@@ -396,14 +395,6 @@ function ClasFinalEtapa2({ onVolver }) {
 
           return (
             <div className="contenedor-indice-principal mb-2">
-              <div className="logo-campeonato">
-                <img 
-                  src="/assets/logo-rally-argentino.png" 
-                  alt="Rally Argentino"
-                  className="img-logo-campeonato"
-                />
-              </div>
-              <div className="linea-divisoria"></div>
               <div className="botones-campeonato">
                 {categoriasOficiales.map((clase) => (
                   <button
@@ -467,7 +458,7 @@ function ClasFinalEtapa2({ onVolver }) {
             Próxima actualización en:
           </span>
           <span 
-            className="badge bg-primary d-flex align-items-center gap-1" 
+            className="badge badge-contador bg-primary d-flex align-items-center gap-1" 
             style={{ fontSize: '0.95rem', padding: '0.4rem 0.8rem' }}
           >
             <svg 
