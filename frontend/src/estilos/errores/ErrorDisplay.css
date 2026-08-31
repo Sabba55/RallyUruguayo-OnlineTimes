@@ -1,0 +1,156 @@
+/* =============================================
+   ESTILOS PARA MANEJO DE ERRORES
+   ============================================= */
+
+.contenedor-error {
+  background: linear-gradient(135deg, #ffffff 0%, #f9fafb 100%);
+  border-radius: 12px;
+  padding: 48px 32px;
+  margin: 32px;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Ícono de error */
+.icono-error-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+
+.icono-error {
+  width: 64px;
+  height: 64px;
+  color: #ef4444;
+  background: rgba(239, 68, 68, 0.1);
+  border-radius: 50%;
+  padding: 12px;
+  animation: balanceo 2s ease-in-out infinite;
+}
+
+@keyframes balanceo {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-5deg);
+  }
+  75% {
+    transform: rotate(5deg);
+  }
+}
+
+/* Mensaje de error */
+.mensaje-error {
+  margin-bottom: 32px;
+}
+
+.titulo-error {
+  font-size: 24px;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 12px;
+  letter-spacing: -0.5px;
+}
+
+.descripcion-error {
+  font-size: 15px;
+  color: #6b7280;
+  line-height: 1.6;
+  margin-bottom: 16px;
+  max-width: 480px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.detalle-error {
+  background: #fef2f2;
+  border: 1px solid #fecaca;
+  border-radius: 8px;
+  padding: 12px 16px;
+  margin-top: 16px;
+  display: inline-block;
+}
+
+.detalle-error code {
+  font-family: 'Courier New', monospace;
+  font-size: 13px;
+  color: #dc2626;
+  font-weight: 600;
+}
+
+/* Acciones de error */
+.acciones-error {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+}
+
+.btn-reintentar-principal,
+.btn-reintentar-secundario {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border: none;
+  padding: 14px 28px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.btn-reintentar-principal {
+  background: linear-gradient(135deg, #0170c4 0%, #018BEB 100%);
+  color: white;
+  box-shadow: 0 4px 12px rgba(1, 139, 235, 0.3);
+}
+
+.btn-reintentar-principal:hover {
+  background: linear-gradient(135deg, #019aff 0%, #33a3ef 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(1, 139, 235, 0.4);
+}
+
+.btn-reintentar-secundario {
+  background: white;
+  color: #374151;
+  border: 2px solid #e5e7eb;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.btn-reintentar-secundario:hover {
+  background: #f9fafb;
+  border-color: #d1d5db;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.btn-reintentar-principal:active,
+.btn-reintentar-secundario:active {
+  transform: translateY(0);
+}
+
+.icono-btn {
+  width: 18px;
+  height: 18px;
+}
+
+/* Información adicional */
+.info-adicional-error {
+  padding-top: 24px;
+  border-top: 1px solid #e5e7eb;
+  margin-top: 8px;
+}
+
+.info-adicional-error p {
+  font-size: 13px;
+  color: #9ca3af;
+  margin: 0;
+}

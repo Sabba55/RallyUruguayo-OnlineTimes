@@ -1,0 +1,23 @@
+/* ===================================
+   BOTONES DE NAVEGACIÓN
+   =================================== */
+.btn-menu {
+  background: #111b28 !important;
+  color: white !important;
+  border: none !important;
+  padding: 5px 30px;
+  font-size: 14px;
+  line-height: 1.4;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 6px rgba(17, 27, 40, 0.35);
+}
+
+.btn-menu:hover {
+  background: #18283c !important;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(17, 27, 40, 0.45);
+}
+
+.btn-menu:active {
+  transform: translateY(0);
+}

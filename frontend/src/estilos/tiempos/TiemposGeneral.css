@@ -1,0 +1,280 @@
+/* ===================================
+   RESET Y CONFIGURACIÓN GENERAL
+   =================================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.font-argentino {
+    font-family: "Orbitron", serif;
+}
+
+/* ===================================
+   CLASIFICACIÓN GENERAL - TABLAS
+   =================================== */
+
+.contenedor-tiempos-general {
+  background-color: #fff;
+  padding: 20px 10px 0px 10px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.titulo-general {
+  background: linear-gradient(135deg, #1a1a1a 0%, #2b2b2b 100%);
+  color: #fff;
+  font-size: 18px;
+  padding: 10px 14px;
+  border-radius: 6px;
+  width: 100%;
+  font-family: 'Orbitron', serif;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.titulo-pe-general {
+  color: #1a1a1a;
+  font-family: "Orbitron", serif;
+  font-size: 22px;
+  font-weight: 800;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+}
+
+.titulo-tramo-pe-general {
+  color: rgb(185, 145, 70);
+  font-weight: 800;
+  margin-right: 7px;
+}
+
+.titulo-tramo-pe-general--power-stage {
+  color: #7c3aed;
+}
+
+.titulo-tramo-texto-general {
+  color: #111b28;
+  font-weight: 800;
+}
+
+.subtitulo-tramo-datos-general {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  color: #111b28;
+  font-family: "Orbitron", serif;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.subtitulo-tramo-separador-general {
+  color: rgb(185, 145, 70);
+}
+
+.encabezado-tramo-general {
+  display: grid;
+  grid-template-columns: 64px minmax(0, 1fr) 64px;
+  align-items: center;
+  gap: 14px;
+  width: 100%;
+  margin-bottom: 8px;
+}
+
+.encabezado-tramo-general-centro {
+  min-width: 0;
+  text-align: center;
+}
+
+.nav-pe-general-lado {
+  display: flex;
+  align-items: center;
+}
+
+.nav-pe-general-lado--izq {
+  justify-content: flex-start;
+}
+
+.nav-pe-general-lado--der {
+  justify-content: flex-end;
+}
+
+.btn-nav-pe-general {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  height: 55px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(135deg, rgb(185, 145, 70) 0%, rgb(160, 121, 54) 100%);
+  color: #ffffff;
+  box-shadow: 0 2px 8px rgba(211, 176, 109, 0.35);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, opacity 0.2s ease;
+}
+
+.btn-nav-pe-general:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 14px rgba(211, 176, 109, 0.45);
+}
+
+.btn-nav-pe-general:disabled {
+  cursor: not-allowed;
+  opacity: 0.35;
+}
+
+.badge-contador-general {
+  background: #111b28 !important;
+}
+
+.tabla-general-pe {
+  width: 100%;
+  border: 2px solid #e5e7eb;
+  border-top: none;
+  font-size: 14px;
+}
+
+.tabla-encabezado-general {
+  background: #111b28;
+}
+
+.tabla-encabezado-general th {
+    color: white !important;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 16px 12px !important;
+    border: none !important;
+    vertical-align: middle !important;
+    background-color: transparent !important;
+    height: 70px !important;
+}
+
+.tabla-fila-datos-general:hover td {
+  background-color: rgba(211, 176, 109, 0.18) !important;
+}
+
+.tabla-fila-datos-general td {
+  vertical-align: middle !important;
+  height: 53px !important;
+}
+
+.celda-piloto-general {
+  line-height: 1.2;
+}
+
+.nombre-piloto-general {
+  font-weight: 700;
+  color: #1a1a1a;
+}
+
+.nombre-navegante-general {
+  font-weight: 700;
+  font-size: 13px;
+  color: #555;
+}
+
+.badge-pos-general {
+  background: linear-gradient(135deg, rgb(185, 145, 70) 0%, rgb(151, 117, 57) 100%);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 6px;
+  font-weight: 700;
+  box-shadow: 0 2px 4px rgba(211,176,109,0.35);
+}
+
+/* ===================================
+   TABLAS LADO A LADO
+   =================================== */
+
+.tabla-pe-general {
+  width: 40%;
+}
+
+.tabla-general-acumulada {
+  width: 60%;
+}
+
+.subtitulo-general {
+  background: linear-gradient(135deg, rgb(185, 145, 70) 0%, rgb(160, 121, 54) 100%);
+  color: #ffffff;
+  padding: 6px 12px;
+  border-radius: 6px 6px 0 0;
+  margin-bottom: 0;
+  font-family: "Orbitron", serif;
+  font-size: 14.3px;
+  letter-spacing: 0.5px;
+  font-weight: 500;
+}
+
+/* ===================================
+   Piloto ganador (primer lugar)
+   =================================== */
+.tabla-pe-general tbody tr:first-child .badge-pos-general {
+  background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%) !important;
+}
+
+.tabla-general-acumulada tbody tr:first-child .badge-pos-general {
+  background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%) !important;
+}
+
+/* ===================================
+   INDICADOR DE CAMBIO DE POSICIONES - GENERAL
+   =================================== */
+.celda-numero-piloto-general {
+  vertical-align: middle;
+  padding: 8px 4px !important;
+}
+
+.numero-piloto-general {
+  line-height: 1;
+  margin-bottom: 2px;
+}
+
+.indicador-posicion-general {
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 1;
+  margin-top: 3px;
+}
+
+.indicador-posicion-general i {
+  font-size: 10px;
+  margin-right: 2px;
+}
+
+.indicador-posicion-general .text-success {
+  color: #10b981 !important;
+}
+
+.indicador-posicion-general .text-danger {
+  color: #ef4444 !important;
+}
+
+/* ===================================
+   CELDA DE NÚMERO CON CATEGORÍA - PE
+   =================================== */
+.celda-numero-pe {
+  vertical-align: middle !important;
+  padding: 4px 8px !important;
+  line-height: 1;
+}
+
+.numero-piloto-pe {
+  font-size: 14px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 2px;
+  line-height: 1;
+}
+
+.categoria-piloto-pe {
+  font-size: 11px;
+  font-weight: 600;
+  color: #6b7280;
+  line-height: 1;
+  margin-top: 2px;
+}

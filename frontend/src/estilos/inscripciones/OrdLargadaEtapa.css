@@ -1,0 +1,228 @@
+/* ===================================
+   RESET Y CONFIGURACIÓN GENERAL
+   =================================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.font-argentino {
+    font-family: "Orbitron", serif;
+}
+
+/* ===================================
+   CONTENEDOR PRINCIPAL ORDEN LARGADA
+   =================================== */
+
+.contenedor-orden-largada {
+  background-color: #fff;
+  padding: 30px 10px 30px 10px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.titulo-orden-largada {
+  font-size: 32px;
+  font-weight: 700;
+  color: #1a1a1a;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+/* ===================================
+   FILTROS
+   =================================== */
+
+.filtros-orden-largada {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  margin-bottom: 22px;
+  margin-right: 15px;
+  margin-left: 15px;
+}
+
+.filtro-grupo-orden-largada {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.filtro-grupo-orden-largada label {
+  color: #111b28;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+}
+
+.filtro-control-orden-largada {
+  width: 100%;
+  border: 2px solid rgba(17, 27, 40, 0.18);
+  border-radius: 8px;
+  background-color: #ffffff;
+  color: #111b28;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 10px 12px;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.filtro-control-orden-largada:focus {
+  outline: none;
+  border-color: rgb(211, 176, 109);
+  box-shadow: 0 0 0 0.2rem rgba(211, 176, 109, 0.22);
+}
+
+.filtro-control-orden-largada::placeholder {
+  color: rgba(17, 27, 40, 0.45);
+}
+
+/* ===================================
+   TABLA DE ORDEN DE LARGADA
+   =================================== */
+
+.tabla-orden-largada {
+  width: 100%;
+  border: 2px solid #e5e7eb;
+  font-size: 14px;
+}
+
+.tabla-encabezado-orden-largada th {
+  background: #111b28;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 13px;
+  text-align: center;
+  vertical-align: middle;
+  padding: 12px 8px;
+}
+
+.tabla-fila-datos-orden-largada:nth-child(odd) {
+  background-color: #f3f4f6;
+}
+
+.tabla-fila-datos-orden-largada:nth-child(even) {
+  background-color: #ffffff;
+}
+
+.tabla-fila-datos-orden-largada:hover td {
+  background-color: rgba(211, 176, 109, 0.18) !important;
+}
+
+.tabla-fila-datos-orden-largada td {
+    vertical-align: middle;
+    padding: 12px 8px;
+    font-size: 15px;
+    justify-content: center;
+}
+
+/* ===================================
+   BADGE DE POSICIÓN
+   =================================== */
+
+.badge-pos-orden-largada {
+  background: linear-gradient(135deg, rgb(185, 145, 70) 0%, rgb(160, 121, 54) 100%);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 6px;
+  font-weight: 700;
+  box-shadow: 0 2px 4px rgba(211,176,109,0.35);
+}
+
+/* ===================================
+   CELDA DE BINOMIO (PILOTO / NAVEGANTE)
+   =================================== */
+
+.celda-binomio-orden-largada {
+  line-height: 1.4;
+}
+
+.nombre-piloto-orden-largada {
+  font-weight: 700;
+  color: #1a1a1a;
+}
+
+.separador-binomio-largada {
+  font-weight: 400;
+  color: #666;
+  margin: 0 6px;
+}
+
+.nombre-navegante-orden-largada {
+  font-weight: 700;
+  color: #1a1a1a;
+}
+
+/* ===================================
+   CELDA DE VEHÍCULO CON LOGO
+   =================================== */
+.logo-marca-orden-largada {
+  height: 24px;
+  width: auto;
+  object-fit: contain;
+  flex-shrink: 0;
+  margin-right: 7px;
+  vertical-align: middle;
+}
+
+.texto-vehiculo-orden-largada {
+  font-weight: 400;
+  color: #1a1a1a;
+  vertical-align: middle;
+}
+
+/* ===================================
+   BANDERA DE NACIONALIDAD
+   =================================== */
+
+.bandera-nacionalidad-largada {
+  height: 20px;
+  width: auto;
+  object-fit: contain;
+  border: 1px solid #ddd;
+  border-radius: 2px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.contenedor-banderas-largada {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
+
+/* ===================================
+   HORA DE LARGADA
+   =================================== */
+
+.hora-largada {
+  font-weight: 700;
+  color: #111b28;
+  font-size: 19px;
+}
+
+/* ===================================
+   RESPONSIVE
+   =================================== */
+@media (max-width: 1024px) { 
+  .contenedor-orden-largada {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+  }
+
+  .filtros-orden-largada {
+    width: 90%;
+  }
+  .tabla-orden-largada {
+    width: 90%;
+  }
+
+  .celda-binomio-orden-largada{
+    width: 430px;
+  }
+}

@@ -1,0 +1,8 @@
+CREATE TABLE IF NOT EXISTS tiempos_tramos (
+  nro INTEGER NOT NULL,
+  pe INTEGER NOT NULL,
+  hlpe VARCHAR(20) NOT NULL DEFAULT '',
+  tpe VARCHAR(20) NOT NULL DEFAULT '',
+  pe_tiempo VARCHAR(20) NOT NULL DEFAULT '',
+  PRIMARY KEY (nro, pe)
+);

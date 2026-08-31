@@ -1,0 +1,172 @@
+/* ===================================
+   RESET Y CONFIGURACIÓN GENERAL
+   =================================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.font-argentino {
+    font-family: "Orbitron", serif;
+}
+
+/* ===================================
+   SHAKEDOWN GENERAL
+   =================================== */
+
+.contenedor-shakedown-general {
+  background-color: #fff;
+  padding: 20px 10px 0px 10px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+/* ===================================
+   TABLA DE SHAKEDOWN
+   =================================== */
+
+.tabla-shakedown-wrapper {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.tabla-shakedown {
+  width: 100%;
+  border: 2px solid #e5e7eb;
+  border-top: none;
+  font-size: 14px;
+}
+
+.tabla-encabezado-shakedown {
+    background: linear-gradient(135deg, #1a1a1a 0%, #2b2b2b 100%);
+}
+
+.tabla-encabezado-shakedown th {
+    color: white !important;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 16px 12px !important;
+    border: none !important;
+    vertical-align: middle !important;
+    background-color: transparent !important;
+    height: 70px !important;
+}
+
+.tabla-fila-datos-shakedown:hover td {
+  background-color: #e3f2fd !important;
+      z-index: 10;
+}
+
+.tabla-fila-datos-shakedown td {
+  vertical-align: middle !important;
+  height: 53px !important;
+}
+
+.celda-piloto-shakedown {
+  line-height: 1.2;
+}
+
+.nombre-piloto-shakedown {
+  font-weight: 700;
+  color: #1a1a1a;
+}
+
+.nombre-navegante-shakedown {
+    font-weight: 700;
+    color: #555;
+}
+
+.badge-pos-shakedown {
+  background: linear-gradient(135deg, #0170c4 0%, #018BEB 100%);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 6px;
+  font-weight: 700;
+  box-shadow: 0 2px 4px rgba(1,139,235,0.2);
+}
+
+/* ===================================
+   CELDA DE NACIONALIDAD (APILADAS)
+   =================================== */
+
+.celda-nacionalidad-shakedown {
+  padding: 4px 8px !important;
+  vertical-align: middle !important;
+}
+
+.contenedor-banderas-apiladas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
+
+.bandera-nacionalidad-shake {
+  width: 28px;
+  height: 17px;
+  object-fit: cover;
+  border-radius: 2px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+}
+
+/* ===================================
+   CELDA DE VEHÍCULO
+   =================================== */
+
+.celda-vehiculo-shakedown {
+  padding: 7px !important;
+  vertical-align: middle !important;
+}
+
+.logo-marca-shakedown {
+  height: 20px;
+  object-fit: contain;
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
+.texto-vehiculo-shakedown {
+  font-size: 14px;
+  font-weight: 600;
+  color: #1a1a1a;
+  vertical-align: middle;
+}
+
+/* ===================================
+   TIEMPOS
+   =================================== */
+
+/* Mejor tiempo de cada piloto (verde) */
+.mejor-tiempo-piloto {
+  background-color: #d1fae5 !important;
+  color: #026949 !important;
+  font-size: 15px;
+}
+
+/* Mejor tiempo general (violeta) */
+.mejor-tiempo-general {
+  background-color: #e9d5ff !important;
+  color: #7c3aed !important;
+  font-size: 15px;
+}
+
+/* AGREGAR ESTAS REGLAS PARA MANTENER LOS COLORES EN HOVER */
+.tabla-fila-datos-shakedown:hover .mejor-tiempo-piloto {
+  background-color: #d1fae5 !important;
+  color: #059669 !important;
+}
+
+.tabla-fila-datos-shakedown:hover .mejor-tiempo-general {
+  background-color: #e9d5ff !important;
+  color: #7c3aed !important;
+}
+
+/* ===================================
+   Piloto ganador (1º posición)
+   =================================== */
+.tabla-shakedown tbody tr:first-child .badge-pos-shakedown {
+  background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%) !important;
+}

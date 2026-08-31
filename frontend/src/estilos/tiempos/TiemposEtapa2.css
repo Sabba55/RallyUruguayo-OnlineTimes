@@ -1,0 +1,418 @@
+/* ===================================
+   RESET Y CONFIGURACIÓN GENERAL
+   =================================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.font-argentino {
+    font-family: "Orbitron", serif;
+}
+
+/* ===================================
+   CLASIFICACIÓN GENERAL ETAPA 2
+   =================================== */
+
+.contenedor-tiempos-etapa2 {
+  background-color: #fff;
+  padding: 30px 10px 0px 10px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.titulo-etapa2 {
+  font-family: "Orbitron", serif;
+  font-size: 22px;
+  font-weight: 800;
+  color: #1a1a1a;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+}
+
+.titulo-tramo-pe-etapa2 {
+  color: rgb(185, 145, 70);
+  font-weight: 800;
+  margin-right: 7px;
+}
+
+.titulo-tramo-pe-etapa2--power-stage {
+  color: #7c3aed;
+}
+
+.titulo-tramo-texto-etapa2 {
+  color: #111b28;
+  font-weight: 800;
+}
+
+.subtitulo-tramo-datos-etapa2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  color: #111b28;
+  font-family: "Orbitron", serif;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.subtitulo-tramo-separador-etapa2 {
+  color: rgb(185, 145, 70);
+}
+
+.encabezado-tramo-etapa2 {
+  display: grid;
+  grid-template-columns: 64px minmax(0, 1fr) 64px;
+  align-items: center;
+  gap: 14px;
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+.encabezado-tramo-etapa2-centro {
+  min-width: 0;
+  text-align: center;
+}
+
+.nav-pe-etapa2-lado {
+  display: flex;
+  align-items: center;
+}
+
+.nav-pe-etapa2-lado--izq {
+  justify-content: flex-start;
+}
+
+.nav-pe-etapa2-lado--der {
+  justify-content: flex-end;
+}
+
+.btn-nav-pe-etapa2 {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  height: 55px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(135deg, rgb(185, 145, 70) 0%, rgb(160, 121, 54) 100%);
+  color: #ffffff;
+  box-shadow: 0 2px 8px rgba(211, 176, 109, 0.35);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, opacity 0.2s ease;
+}
+
+.btn-nav-pe-etapa2:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 14px rgba(211, 176, 109, 0.45);
+}
+
+.btn-nav-pe-etapa2:disabled {
+  cursor: not-allowed;
+  opacity: 0.35;
+}
+
+.btn-volver {
+  background: linear-gradient(135deg, #0170c4 0%, #018BEB 100%);
+  color: white;
+  font-weight: 600;
+  padding: 6px 20px;
+  border: none;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(1,139,235,0.3);
+  transition: all 0.3s ease;
+}
+.btn-volver:hover {
+  background: linear-gradient(135deg, #019aff 0%, #33a3ef 100%);
+  transform: translateY(-2px);
+}
+
+.encabezado-clase-etapa2 {
+  background: linear-gradient(135deg, #1a1a1a 0%, #2b2b2b 100%);
+  color: #fff;
+  font-size: 18px;
+  padding: 10px 14px;
+  border-radius: 6px;
+  font-family: 'Orbitron', serif;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.tabla-etapa2-pe {
+  width: 100%;
+  border: 2px solid #e5e7eb;
+  border-top: none;
+  font-size: 14px;
+}
+
+.tabla-encabezado-etapa2 th {
+    background: linear-gradient(135deg, #1a1a1a 0%, #2b2b2b 100%);
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 13px;
+    text-align: center;
+    vertical-align: middle;
+    padding: 12px 8px;
+}
+
+.tabla-fila-datos-etapa2:nth-child(odd) {
+  background-color: #f3f4f6;
+}
+
+.tabla-fila-datos-etapa2:nth-child(even) {
+  background-color: #ffffff;
+}
+
+.tabla-fila-datos-etapa2:hover td {
+  background-color: rgba(211, 176, 109, 0.18) !important;
+}
+
+.tabla-fila-datos-etapa2 td {
+    vertical-align: middle;
+    padding: 12px 8px;
+    font-size: 15px;
+}
+
+.celda-piloto-etapa2 {
+  line-height: 1.2;
+}
+
+.nombre-piloto-etapa2 {
+  font-weight: 700;
+  color: #1a1a1a;
+}
+
+.nombre-navegante-etapa2 {
+  font-size: 15px;
+  font-weight: 700;
+  color: #555;
+}
+
+.badge-pos-etapa2 {
+  background: linear-gradient(135deg, #0170c4 0%, #018BEB 100%);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 6px;
+  font-weight: 700;
+  box-shadow: 0 2px 4px rgba(1,139,235,0.2);
+}
+
+/* ===================================
+   CELDA DE NACIONALIDAD (APILADAS) - ETAPA 2
+   =================================== */
+
+.celda-nacionalidad-etapa2 {
+  padding: 4px 8px !important;
+  vertical-align: middle !important;
+}
+
+.contenedor-banderas-apiladas-etapa2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
+
+.bandera-nacionalidad-etapa2 {
+  width: 28px;
+  height: 17px;
+  object-fit: cover;
+  border-radius: 2px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+}
+
+/* ===================================
+   TABLA GENERAL ÚNICA
+   =================================== */
+
+.tabla-general-etapa2-unica {
+  width: 100%;
+}
+
+.subtitulo-etapa2 {
+  background: #111b28;
+  color: #ffffff;
+  padding: 6px 12px;
+  border-radius: 6px 6px 0 0;
+  margin-bottom: 0;
+  font-family: "Orbitron", serif;
+  font-size: 14.5px;
+  letter-spacing: 0.5px;
+  font-weight: 500;
+}
+
+/* ===================================
+   Piloto que viene ganando
+   =================================== */
+.tabla-general-etapa2-unica tbody tr:first-child .badge-pos-etapa2 {
+  background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%) !important;
+}
+
+/* ===================================
+   Boton del indice
+   =================================== */
+.btn-categoria-etapa2 {
+  background: rgb(185, 145, 70);
+  color: white;
+  font-weight: 600;
+  border: none;
+  box-shadow: 0 2px 6px rgba(211, 176, 109, 0.3);
+  transition: all 0.3s ease;
+  font-size: 14px;
+  font-family: 'Orbitron', serif;
+  padding: 10px 23px;   /* más grande*/
+  border-radius: 8px;
+  letter-spacing: 0.5px;
+}
+
+.btn-categoria-etapa2:hover {
+  background: rgb(160, 121, 54);
+  transform: translateY(-2px);
+}
+
+.btn-categoria-etapa2--oculta {
+  opacity: 0.45;
+  filter: grayscale(0.35);
+}
+
+.select-filtro-wrapper-etapa2 {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: #111b28;
+  color: #ffffff;
+  border-radius: 8px;
+  padding: 0;
+  width: 42px;
+  min-height: 42px;
+  box-shadow: 0 2px 6px rgba(17, 27, 40, 0.22);
+  overflow: hidden;
+}
+
+.select-filtro-wrapper-etapa2 svg {
+  pointer-events: none;
+}
+
+.select-filtro-wrapper-etapa2 select {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: transparent;
+  font-family: 'Orbitron', serif;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  opacity: 0;
+}
+
+.select-filtro-wrapper-etapa2 option {
+  color: #111b28;
+  background: #ffffff;
+}
+
+/* ===================================
+   INDICADOR DE CAMBIO DE POSICIONES - ETAPA 2
+   =================================== */
+.celda-numero-piloto-etapa2 {
+  vertical-align: middle;
+  padding: 8px 4px !important;
+}
+
+.numero-piloto-etapa2 {
+  line-height: 1;
+  margin-bottom: 2px;
+}
+
+.indicador-posicion-etapa2 {
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 1;
+  margin-top: 3px;
+}
+
+.indicador-posicion-etapa2 i {
+  font-size: 10px;
+  margin-right: 2px;
+}
+
+.indicador-posicion-etapa2 .text-success {
+  color: #10b981 !important;
+}
+
+.indicador-posicion-etapa2 .text-danger {
+  color: #ef4444 !important;
+}
+
+/* ===================================
+   BOTONES DE INDICES - CAMPEONATO SECUNDARIO
+   =================================== */
+.btn-categoria-secundario {
+  background: #123e53;
+  color: white;
+  font-weight: 600;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(35, 122, 167, 0.3);
+  transition: all 0.3s ease;
+  font-size: 14px;
+}
+
+.btn-categoria-secundario:hover {
+  background: linear-gradient(135deg, #2a8ec4 0%, #237AA7 100%);
+  transform: translateY(-2px);
+}
+
+/* ===================================
+   CONTENEDORES DE INDICES CON LOGO
+   =================================== */
+.contenedor-indice-principal,
+.contenedor-indice-secundario {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 0px 20px;
+}
+
+.logo-campeonato {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.img-logo-campeonato {
+  height: 60px;
+  width: auto;
+  object-fit: contain;
+}
+
+.linea-divisoria {
+  width: 3px;
+  border-radius: 20px;
+  height: 50px;
+  background-color: #2b2b2bef;
+}
+
+.botones-campeonato {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.badge-contador-etapa2 {
+  background: #111b28 !important;
+}

@@ -1,0 +1,156 @@
+/* ===================================
+   RESET Y CONFIGURACIÓN GENERAL
+   =================================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.font-argentino {
+    font-family: "Orbitron", serif;
+}
+
+/* ===================================
+   CONTENEDOR PRINCIPAL DE INSCRIPTOS
+   =================================== */
+
+.contenedor-inscriptos {
+  background-color: #fff;
+  padding: 30px 10px 30px 10px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.titulo-inscriptos-pilotos {
+  font-size: 32px;
+  font-weight: 700;
+  color: #1a1a1a;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+
+/* ===================================
+   TABLA DE INSCRIPTOS
+   =================================== */
+
+.tabla-inscriptos {
+  width: 100%;
+  border: 2px solid #e5e7eb;
+  font-size: 14px;
+}
+
+.tabla-encabezado-inscriptos th {
+  background: #111b28;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 13px;
+  text-align: center;
+  vertical-align: middle;
+  padding: 12px 8px;
+}
+
+.tabla-fila-datos-inscriptos:nth-child(odd) {
+  background-color: #f3f4f6;
+}
+
+.tabla-fila-datos-inscriptos:nth-child(even) {
+  background-color: #ffffff;
+}
+
+.tabla-fila-datos-inscriptos:hover td {
+  background-color: rgba(211, 176, 109, 0.18) !important;
+}
+
+.tabla-fila-datos-inscriptos td {
+    vertical-align: middle;
+    padding: 12px 8px;
+    font-size: 15px;
+    justify-content: center;
+}
+
+/* ===================================
+   BADGE DE POSICIÓN
+   =================================== */
+
+.badge-pos-inscriptos {
+  background: linear-gradient(135deg, rgb(185, 145, 70) 0%, rgb(160, 121, 54) 100%);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 6px;
+  font-weight: 700;
+  box-shadow: 0 2px 4px rgba(211,176,109,0.35);
+}
+
+/* ===================================
+   CELDA DE BINOMIO (PILOTO / NAVEGANTE)
+   =================================== */
+
+.nombre-piloto-inscriptos {
+  font-weight: 700;
+  color: #1a1a1a;
+}
+
+.nombre-navegante-inscriptos {
+  font-weight: 700;
+  color: #1a1a1a;
+}
+
+/* ===================================
+   CELDA DE VEHÍCULO CON LOGO
+   =================================== */
+
+.celda-vehiculo-inscriptos {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.logo-marca-inscriptos {
+  height: 24px;
+  width: auto;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.texto-vehiculo-inscriptos {
+  font-weight: 400;
+  color: #1a1a1a;
+}
+
+/* ===================================
+   BANDERA DE NACIONALIDAD
+   =================================== */
+
+.bandera-nacionalidad {
+  height: 20px;
+  width: auto;
+  object-fit: contain;
+  border: 1px solid #ddd;
+  border-radius: 2px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+/* ===================================
+   ESTILO PARA EL SEPARADOR DE CLASE
+   =================================== */
+.separador-clase {
+  color: #707070;
+  border-radius: 12px;
+  margin: 0 1px;
+}
+
+/* ===================================
+   RESPONSIVE
+   =================================== */
+@media (max-width: 1024px) { 
+  .contenedor-inscriptos {
+      display: flex;
+      justify-content: center;
+  }
+  .tabla-inscriptos {
+    width: 90%;
+  }
+
+}

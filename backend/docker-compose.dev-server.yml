@@ -1,0 +1,20 @@
+services:
+  app:
+    image: node:22-alpine
+    container_name: my-node-app
+    working_dir: /usr/src/app
+
+    # Copia el código dentro del contenedor si querés producción pura.
+    # Si querés desarrollo, podés usar volumes (abajo te muestro cómo).
+    volumes:
+      - .:/usr/src/app
+
+    command: sh -c "npm install --omit=dev && node src/index.js"
+
+    environment:
+      NODE_ENV: production
+
+    ports:
+      - "5000:5000"   # Cambiá el puerto si tu app usa otro
+
+    restart: always

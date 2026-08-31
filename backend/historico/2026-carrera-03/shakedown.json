@@ -1,0 +1,797 @@
+[
+  {
+    "id": "1",
+    "piloto": "Miguel BALDONI",
+    "v3": "",
+    "nro": "1",
+    "v2": "",
+    "v1": "2:00.600",
+    "clase": "RC2",
+    "vehiculo": "Skoda Fabia RS Rally2",
+    "navegante": "Gustavo FRANCHELLO",
+    "ultima_actualizacion": {
+      "_seconds": 1779475846,
+      "_nanoseconds": 364000000
+    }
+  },
+  {
+    "id": "10",
+    "nro": "10",
+    "v2": "2:03.600",
+    "v3": "",
+    "v1": "2:04.300",
+    "piloto": "Rodrigo DISALVO",
+    "navegante": "Andrés PISSACO",
+    "clase": "COPA RC2",
+    "vehiculo": "Skoda Fabia R5",
+    "ultima_actualizacion": {
+      "_seconds": 1779476145,
+      "_nanoseconds": 768000000
+    }
+  },
+  {
+    "id": "101",
+    "clase": "RC5",
+    "v3": "",
+    "v1": "2:28.800",
+    "vehiculo": "Ford Fiesta",
+    "v2": "",
+    "navegante": "Alejo BALESTRE",
+    "nro": "101",
+    "piloto": "Santiago SABBATINI",
+    "ultima_actualizacion": {
+      "_seconds": 1779472965,
+      "_nanoseconds": 649000000
+    }
+  },
+  {
+    "id": "104",
+    "vehiculo": "Peugeot 208",
+    "navegante": "Gonzalo MARTÍNEZ",
+    "v3": "2:41.700",
+    "v2": "2:30.000",
+    "clase": "RC5",
+    "piloto": "Fernando MULLER",
+    "nro": "104",
+    "v1": "2:27.000",
+    "ultima_actualizacion": {
+      "_seconds": 1779475125,
+      "_nanoseconds": 911000000
+    }
+  },
+  {
+    "id": "105",
+    "v3": "",
+    "v1": "2:33.800",
+    "piloto": "Gerardo ONTIVERO",
+    "nro": "105",
+    "v2": "2:39.200",
+    "clase": "RC5",
+    "vehiculo": "Peugeot 208",
+    "navegante": "Federico MOLINA",
+    "ultima_actualizacion": {
+      "_seconds": 1779473986,
+      "_nanoseconds": 857000000
+    }
+  },
+  {
+    "id": "110",
+    "v2": "2:34.000",
+    "vehiculo": "Peugeot 208",
+    "piloto": "Roberto FORZANI",
+    "clase": "RC5",
+    "nro": "110",
+    "v3": "",
+    "v1": "2:32.200",
+    "navegante": "Francisco MOLDES",
+    "ultima_actualizacion": {
+      "_seconds": 1779474105,
+      "_nanoseconds": 655000000
+    }
+  },
+  {
+    "id": "111",
+    "piloto": "Sebastián LANDA",
+    "v2": "",
+    "v1": "2:46.400",
+    "v3": "",
+    "nro": "111",
+    "clase": "RC5",
+    "vehiculo": "Ford Fiesta",
+    "navegante": "Rodrigo VERGARA",
+    "ultima_actualizacion": {
+      "_seconds": 1779474045,
+      "_nanoseconds": 799000000
+    }
+  },
+  {
+    "id": "112",
+    "v3": "",
+    "v1": "2:23.100",
+    "navegante": "Ignacio CASAMIQUELLA",
+    "clase": "RC5",
+    "nro": "112",
+    "v2": "2:35.500",
+    "vehiculo": "Ford Fiesta",
+    "piloto": "José GÓMEZ",
+    "ultima_actualizacion": {
+      "_seconds": 1779474526,
+      "_nanoseconds": 569000000
+    }
+  },
+  {
+    "id": "114",
+    "vehiculo": "Peugeot 208",
+    "navegante": "J. FERNÁNDEZ IGARTÚA",
+    "v3": "",
+    "v2": "2:37.900",
+    "clase": "RC5",
+    "piloto": "Horacio MARINO",
+    "nro": "114",
+    "v1": "2:28.100",
+    "ultima_actualizacion": {
+      "_seconds": 1779473385,
+      "_nanoseconds": 898000000
+    }
+  },
+  {
+    "id": "116",
+    "vehiculo": "Ford Fiesta",
+    "piloto": "Pablo ALESSANDRINI",
+    "navegante": "Ignacio GOMEZ",
+    "nro": "116",
+    "v3": "",
+    "v2": "2:34.300",
+    "v1": "2:31.900",
+    "clase": "RC5",
+    "ultima_actualizacion": {
+      "_seconds": 1779574965,
+      "_nanoseconds": 387000000
+    }
+  },
+  {
+    "id": "12",
+    "v3": "",
+    "nro": "12",
+    "v2": "",
+    "v1": "5:58.900",
+    "piloto": "Agustín MONDANI",
+    "vehiculo": "Hyundai i20 R5",
+    "navegante": "J. Pablo MONASTEROLO",
+    "clase": "COPA RC2",
+    "ultima_actualizacion": {
+      "_seconds": 1779477045,
+      "_nanoseconds": 798000000
+    }
+  },
+  {
+    "id": "124",
+    "v2": "2:46.700",
+    "vehiculo": "Ford Fiesta",
+    "piloto": "Rodrigo FERREYRA",
+    "clase": "RC5",
+    "nro": "124",
+    "v3": "",
+    "v1": "2:46.700",
+    "navegante": "Tomás PEROSINO",
+    "ultima_actualizacion": {
+      "_seconds": 1779474105,
+      "_nanoseconds": 655000000
+    }
+  },
+  {
+    "id": "126",
+    "clase": "RC5",
+    "nro": "126",
+    "v2": "2:34.400",
+    "vehiculo": "Ford Fiesta",
+    "piloto": "Gustavo ROJAS",
+    "v3": "",
+    "v1": "2:27.400",
+    "navegante": "Joaquín ROJAS",
+    "ultima_actualizacion": {
+      "_seconds": 1779473205,
+      "_nanoseconds": 804000000
+    }
+  },
+  {
+    "id": "127",
+    "clase": "RC5",
+    "nro": "127",
+    "piloto": "Franco FOSSATTI",
+    "v2": "",
+    "vehiculo": "Ford Fiesta",
+    "v3": "",
+    "v1": "2:36.100",
+    "navegante": "Nicolás TORRES",
+    "ultima_actualizacion": {
+      "_seconds": 1779473205,
+      "_nanoseconds": 804000000
+    }
+  },
+  {
+    "id": "128",
+    "piloto": "Claudio BUSTOS",
+    "v3": "",
+    "v1": "2:33.100",
+    "v2": "2:37.900",
+    "nro": "128",
+    "clase": "RC5",
+    "vehiculo": "Ford Ka",
+    "navegante": "Débora VAZQUEZ",
+    "ultima_actualizacion": {
+      "_seconds": 1779473986,
+      "_nanoseconds": 857000000
+    }
+  },
+  {
+    "id": "129",
+    "clase": "RC5",
+    "v3": "",
+    "v1": "2:34.700",
+    "vehiculo": "Peugeot 208",
+    "v2": "",
+    "navegante": "Tomás RADOMICH",
+    "nro": "129",
+    "piloto": "Miguel RADOMICH",
+    "ultima_actualizacion": {
+      "_seconds": 1779472965,
+      "_nanoseconds": 649000000
+    }
+  },
+  {
+    "id": "130",
+    "navegante": "Carlos ALMEIRA",
+    "v2": "2:32.400",
+    "vehiculo": "Ford Fiesta",
+    "clase": "RC5",
+    "v3": "",
+    "piloto": "Jeremías TIERI",
+    "nro": "130",
+    "v1": "2:29.500",
+    "ultima_actualizacion": {
+      "_seconds": 1779473806,
+      "_nanoseconds": 402000000
+    }
+  },
+  {
+    "id": "131",
+    "v3": "",
+    "clase": "RC5",
+    "navegante": "Ezequiel REBOLLEDO",
+    "piloto": "Matías AVILA",
+    "nro": "131",
+    "v1": "2:29.100",
+    "vehiculo": "Ford Fiesta",
+    "v2": "",
+    "ultima_actualizacion": {
+      "_seconds": 1779471165,
+      "_nanoseconds": 818000000
+    }
+  },
+  {
+    "id": "132",
+    "nro": "132",
+    "v1": "2:23.600",
+    "clase": "RC5",
+    "v3": "",
+    "piloto": "Lautaro ANGELONI",
+    "v2": "2:37.600",
+    "vehiculo": "Ford Fiesta",
+    "navegante": "Marcos NÚÑEZ",
+    "ultima_actualizacion": {
+      "_seconds": 1779473806,
+      "_nanoseconds": 402000000
+    }
+  },
+  {
+    "id": "133",
+    "piloto": "Leandro MARTÍNEZ",
+    "v2": "2:33.200",
+    "vehiculo": "Ford Fiesta",
+    "clase": "RC5",
+    "nro": "133",
+    "v3": "",
+    "v1": "2:34.700",
+    "navegante": "Agustín KUNZ",
+    "ultima_actualizacion": {
+      "_seconds": 1779474105,
+      "_nanoseconds": 655000000
+    }
+  },
+  {
+    "id": "134",
+    "v3": "",
+    "v1": "2:24.600",
+    "navegante": "Pablo ORELLANA",
+    "clase": "RC5",
+    "nro": "134",
+    "piloto": "Diego ORELLANA",
+    "v2": "",
+    "vehiculo": "Ford Fiesta",
+    "ultima_actualizacion": {
+      "_seconds": 1779470805,
+      "_nanoseconds": 645000000
+    }
+  },
+  {
+    "id": "135",
+    "nro": "135",
+    "v2": "",
+    "navegante": "Pablo QUILODRAN",
+    "piloto": "Julio QUILODRAN",
+    "clase": "RC5",
+    "vehiculo": "Chevrolet Onix",
+    "v3": "",
+    "v1": "",
+    "ultima_actualizacion": {
+      "_seconds": 1779457365,
+      "_nanoseconds": 938000000
+    }
+  },
+  {
+    "id": "136",
+    "clase": "RC5",
+    "vehiculo": "Nissan March",
+    "navegante": "Gabriel ABURTO",
+    "piloto": "Luis CAIRONE",
+    "v2": "2:49.600",
+    "v1": "2:43.300",
+    "v3": "",
+    "nro": "136",
+    "ultima_actualizacion": {
+      "_seconds": 1779473685,
+      "_nanoseconds": 985000000
+    }
+  },
+  {
+    "id": "137",
+    "vehiculo": "Ford Fiesta",
+    "navegante": "Eros PAULOVICH",
+    "v3": "",
+    "v2": "2:39.300",
+    "clase": "RC5",
+    "piloto": "Leandro PAULOVICH",
+    "nro": "137",
+    "v1": "2:27.700",
+    "ultima_actualizacion": {
+      "_seconds": 1779473385,
+      "_nanoseconds": 898000000
+    }
+  },
+  {
+    "id": "16",
+    "vehiculo": "Skoda Fabia R5",
+    "navegante": "Gustavo BREGLIA",
+    "clase": "COPA RC2",
+    "v3": "",
+    "nro": "16",
+    "v2": "",
+    "v1": "2:09.000",
+    "piloto": "Carlos BELLO",
+    "ultima_actualizacion": {
+      "_seconds": 1779475545,
+      "_nanoseconds": 783000000
+    }
+  },
+  {
+    "id": "18",
+    "clase": "COPA RC2",
+    "vehiculo": "Skoda Fabia R5",
+    "navegante": "Marcelo BRIZIO",
+    "piloto": "Meliza PREVEDELLO",
+    "v3": "",
+    "nro": "18",
+    "v2": "2:10.800",
+    "v1": "2:16.900",
+    "ultima_actualizacion": {
+      "_seconds": 1779476746,
+      "_nanoseconds": 33000000
+    }
+  },
+  {
+    "id": "22",
+    "v3": "",
+    "v1": "2:08.700",
+    "vehiculo": "Skoda Fabia R5",
+    "clase": "COPA RC2",
+    "piloto": "Walter D'AGOSTINI",
+    "v2": "2:05.100",
+    "navegante": "Mauricio OBRADOR",
+    "nro": "22",
+    "ultima_actualizacion": {
+      "_seconds": 1779477405,
+      "_nanoseconds": 801000000
+    }
+  },
+  {
+    "id": "24",
+    "v2": "",
+    "nro": "24",
+    "piloto": "Augusto D'AGOSTINI",
+    "v3": "",
+    "v1": "2:04.400",
+    "navegante": "Juan Pablo CARRERA",
+    "clase": "RC2",
+    "vehiculo": "Skoda Fabia RS Rally2",
+    "ultima_actualizacion": {
+      "_seconds": 1779476145,
+      "_nanoseconds": 768000000
+    }
+  },
+  {
+    "id": "25",
+    "clase": "COPA RC2",
+    "vehiculo": "Hyundai i20 R5",
+    "navegante": "Javier VILLAGRA",
+    "v3": "",
+    "v1": "2:06.600",
+    "piloto": "Federico VILLAGRA (H)",
+    "nro": "25",
+    "v2": "",
+    "ultima_actualizacion": {
+      "_seconds": 1779476145,
+      "_nanoseconds": 768000000
+    }
+  },
+  {
+    "id": "26",
+    "piloto": "Genaro GONZÁLEZ",
+    "v2": "2:26.700",
+    "navegante": "Zacarías GARCÍA",
+    "nro": "26",
+    "v3": "",
+    "v1": "2:08.300",
+    "vehiculo": "Skoda Fabia R5",
+    "clase": "COPA RC2",
+    "ultima_actualizacion": {
+      "_seconds": 1779477405,
+      "_nanoseconds": 801000000
+    }
+  },
+  {
+    "id": "27",
+    "vehiculo": "Skoda Fabia R5",
+    "navegante": "Diego CAGNOTTI",
+    "clase": "RC2",
+    "v3": "",
+    "nro": "27",
+    "v2": "1:59.300",
+    "v1": "2:00.100",
+    "piloto": "Alejandro CANCIO",
+    "ultima_actualizacion": {
+      "_seconds": 1779477045,
+      "_nanoseconds": 798000000
+    }
+  },
+  {
+    "id": "28",
+    "vehiculo": "Citroen C3 Rally2",
+    "navegante": "Javier TABOADA",
+    "nro": "28",
+    "v3": "4:03.900",
+    "v2": "2:03.300",
+    "clase": "RC2",
+    "v1": "2:44.500",
+    "piloto": "Leandro BONNIN",
+    "ultima_actualizacion": {
+      "_seconds": 1779478185,
+      "_nanoseconds": 849000000
+    }
+  },
+  {
+    "id": "3",
+    "navegante": "Diego CURLETTO",
+    "clase": "RC2",
+    "vehiculo": "Skoda Fabia RS Rally2",
+    "v2": "",
+    "nro": "3",
+    "piloto": "Federico VILLAGRA",
+    "v3": "",
+    "v1": "2:03.500",
+    "ultima_actualizacion": {
+      "_seconds": 1779476145,
+      "_nanoseconds": 768000000
+    }
+  },
+  {
+    "id": "41",
+    "nro": "41",
+    "v2": "2:09.300",
+    "v3": "",
+    "v1": "2:12.500",
+    "piloto": "Rubén MONTORO",
+    "navegante": "Ignacio UEZ",
+    "clase": "RCMR",
+    "vehiculo": "VW Gol Trend MRT",
+    "ultima_actualizacion": {
+      "_seconds": 1779476145,
+      "_nanoseconds": 768000000
+    }
+  },
+  {
+    "id": "44",
+    "vehiculo": "Citroen DS3 MRT",
+    "navegante": "Claudio MORENO",
+    "clase": "RCMR",
+    "v3": "",
+    "nro": "44",
+    "v2": "2:09.700",
+    "v1": "2:12.100",
+    "piloto": "Victorio BALLAY",
+    "ultima_actualizacion": {
+      "_seconds": 1779477045,
+      "_nanoseconds": 798000000
+    }
+  },
+  {
+    "id": "45",
+    "vehiculo": "Toyota Yaris MRT",
+    "navegante": "Miguel RECALT",
+    "clase": "RCMR",
+    "v3": "",
+    "nro": "45",
+    "v2": "",
+    "v1": "2:20.000",
+    "piloto": "Nadia CUTRO",
+    "ultima_actualizacion": {
+      "_seconds": 1779475545,
+      "_nanoseconds": 783000000
+    }
+  },
+  {
+    "id": "47",
+    "clase": "RCMR",
+    "vehiculo": "Citroen DS3 MRT",
+    "navegante": "Juan Pablo DEL RIEGO",
+    "piloto": "Ramiro KAUFMANN",
+    "v2": "2:11.700",
+    "v1": "2:15.300",
+    "v3": "2:13.300",
+    "nro": "47",
+    "ultima_actualizacion": {
+      "_seconds": 1779477045,
+      "_nanoseconds": 798000000
+    }
+  },
+  {
+    "id": "50",
+    "vehiculo": "VW Polo MRT",
+    "navegante": "Gerónimo BORDIGNON",
+    "v3": "",
+    "v2": "2:04.700",
+    "clase": "RCMR",
+    "piloto": "Nicolás GONZÁLEZ",
+    "nro": "50",
+    "v1": "2:07.500",
+    "ultima_actualizacion": {
+      "_seconds": 1779480226,
+      "_nanoseconds": 390000000
+    }
+  },
+  {
+    "id": "51",
+    "v3": "",
+    "vehiculo": "VW Polo MRT",
+    "navegante": "Rubén GARCÍA",
+    "v1": "2:10.000",
+    "v2": "2:06.500",
+    "clase": "RCMR",
+    "piloto": "Gastón GONZÁLEZ",
+    "nro": "51",
+    "ultima_actualizacion": {
+      "_seconds": 1779476925,
+      "_nanoseconds": 891000000
+    }
+  },
+  {
+    "id": "52",
+    "piloto": "José IRIBARREN",
+    "v2": "2:13.200",
+    "v1": "2:15.800",
+    "v3": "2:13.300",
+    "nro": "52",
+    "clase": "RCMR",
+    "vehiculo": "VW Gol Trend MRT",
+    "navegante": "José BRUSCO",
+    "ultima_actualizacion": {
+      "_seconds": 1779477045,
+      "_nanoseconds": 798000000
+    }
+  },
+  {
+    "id": "53",
+    "piloto": "Gastón SALAZAR",
+    "v3": "",
+    "nro": "53",
+    "v2": "2:33.000",
+    "v1": "2:33.500",
+    "clase": "RCMR",
+    "vehiculo": "VW Polo MRT",
+    "navegante": "Marcos BAZÁN",
+    "ultima_actualizacion": {
+      "_seconds": 1779478665,
+      "_nanoseconds": 800000000
+    }
+  },
+  {
+    "id": "6",
+    "piloto": "Diego MICELI",
+    "v3": "",
+    "nro": "6",
+    "v2": "",
+    "v1": "2:02.200",
+    "clase": "COPA RC2",
+    "vehiculo": "Skoda Fabia Rally2 evo",
+    "navegante": "Sergio DAPARTE",
+    "ultima_actualizacion": {
+      "_seconds": 1779476746,
+      "_nanoseconds": 33000000
+    }
+  },
+  {
+    "id": "74",
+    "nro": "74",
+    "v2": "",
+    "v1": "2:19.700",
+    "vehiculo": "Peugeot 208 Rally4",
+    "v3": "",
+    "piloto": "Carlos CATALDO",
+    "clase": "RC4",
+    "navegante": "Damián CABRAL",
+    "ultima_actualizacion": {
+      "_seconds": 1779471165,
+      "_nanoseconds": 818000000
+    }
+  },
+  {
+    "id": "76",
+    "navegante": "Franco AMAYA",
+    "clase": "RC4",
+    "vehiculo": "Peugeot 208 Rally4",
+    "nro": "76",
+    "v2": "2:24.000",
+    "v3": "",
+    "v1": "2:20.800",
+    "piloto": "Guillermo AMBROSIO",
+    "ultima_actualizacion": {
+      "_seconds": 1779473986,
+      "_nanoseconds": 857000000
+    }
+  },
+  {
+    "id": "77",
+    "v3": "2:24.200",
+    "v1": "3:28.700",
+    "navegante": "Gerardo SCICOLONE",
+    "clase": "RC4",
+    "nro": "77",
+    "piloto": "Sabrina SCICOLONE",
+    "v2": "2:26.600",
+    "vehiculo": "Peugeot 208 Rally4",
+    "ultima_actualizacion": {
+      "_seconds": 1779474526,
+      "_nanoseconds": 569000000
+    }
+  },
+  {
+    "id": "78",
+    "vehiculo": "Peugeot 208 Rally4",
+    "v3": "",
+    "v1": "",
+    "clase": "RC4",
+    "piloto": "Roberto RAIMONDI",
+    "nro": "78",
+    "v2": "",
+    "navegante": "José RAIMONDI",
+    "ultima_actualizacion": {
+      "_seconds": 1779457365,
+      "_nanoseconds": 938000000
+    }
+  },
+  {
+    "id": "82",
+    "navegante": "Rodolfo GUEVARA",
+    "v2": "2:39.900",
+    "vehiculo": "Peugeot 208 G1",
+    "v3": "",
+    "piloto": "Mario RASSO",
+    "clase": "RC3",
+    "v1": "2:12.300",
+    "nro": "82",
+    "ultima_actualizacion": {
+      "_seconds": 1779473087,
+      "_nanoseconds": 315000000
+    }
+  },
+  {
+    "id": "83",
+    "v3": "2:22.400",
+    "v1": "3:19.200",
+    "navegante": "Gonzalo DÍAZ",
+    "clase": "RC3",
+    "nro": "83",
+    "piloto": "Ignacio VILLA",
+    "v2": "2:22.300",
+    "vehiculo": "Peugeot 208 G2",
+    "ultima_actualizacion": {
+      "_seconds": 1779474526,
+      "_nanoseconds": 569000000
+    }
+  },
+  {
+    "id": "87",
+    "piloto": "Fernando DAPARTE",
+    "nro": "87",
+    "v2": "",
+    "navegante": "Emanuel ROZADOS",
+    "vehiculo": "Ford Fiesta",
+    "v3": "",
+    "v1": "2:24.600",
+    "clase": "RC3",
+    "ultima_actualizacion": {
+      "_seconds": 1779472965,
+      "_nanoseconds": 649000000
+    }
+  },
+  {
+    "id": "9",
+    "v2": "2:31.600",
+    "navegante": "Leonardo LONDERO",
+    "nro": "9",
+    "piloto": "Antonio PREVEDELLO",
+    "clase": "COPA RC2",
+    "v3": "",
+    "v1": "2:38.700",
+    "vehiculo": "Skoda Fabia R5",
+    "ultima_actualizacion": {
+      "_seconds": 1779477405,
+      "_nanoseconds": 801000000
+    }
+  },
+  {
+    "id": "90",
+    "clase": "RC3",
+    "nro": "90",
+    "v2": "2:26.200",
+    "vehiculo": "VW Gol Trend",
+    "piloto": "Diego SEMPER",
+    "v3": "2:27.800",
+    "v1": "2:18.100",
+    "navegante": "Pedro SEMPER",
+    "ultima_actualizacion": {
+      "_seconds": 1779474526,
+      "_nanoseconds": 569000000
+    }
+  },
+  {
+    "id": "92",
+    "v3": "",
+    "v1": "2:26.100",
+    "navegante": "Sebastián MUGNI",
+    "clase": "RC3",
+    "nro": "92",
+    "piloto": "Valentino CARDOSO",
+    "v2": "2:28.900",
+    "vehiculo": "Ford Fiesta",
+    "ultima_actualizacion": {
+      "_seconds": 1779474526,
+      "_nanoseconds": 569000000
+    }
+  },
+  {
+    "id": "93",
+    "v2": "2:27.400",
+    "vehiculo": "VW Gol Trend",
+    "piloto": "Pedro SKRUTA",
+    "clase": "RC3",
+    "nro": "93",
+    "v3": "",
+    "v1": "2:28.400",
+    "navegante": "Ulises AGESTA",
+    "ultima_actualizacion": {
+      "_seconds": 1779474526,
+      "_nanoseconds": 569000000
+    }
+  }
+]

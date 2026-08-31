@@ -1,0 +1,89 @@
+# ===================================
+# NODE
+# ===================================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
+
+# ===================================
+# VARIABLES DE ENTORNO
+# ===================================
+.env
+.env.local
+.env.development
+.env.production
+.env.test
+
+# ===================================
+# FIREBASE
+# ===================================
+# Credenciales de Firebase (Service Account)
+firebase-service-account.json
+*-firebase-adminsdk-*.json
+.firebase/
+.firebaserc
+firebase-debug.log
+firestore-debug.log
+
+# ===================================
+# LOGS
+# ===================================
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# ===================================
+# SISTEMA OPERATIVO
+# ===================================
+# MacOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Linux
+*~
+
+# ===================================
+# IDEs Y EDITORES
+# ===================================
+# VSCode
+.vscode/
+*.code-workspace
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# ===================================
+# TEMPORAL Y CACHE
+# ===================================
+.cache/
+dist/
+build/
+tmp/
+temp/
+
+# ===================================
+# OTROS
+# ===================================
+.env.backup
+*.bak
+*.swp
+*.swo
+*~

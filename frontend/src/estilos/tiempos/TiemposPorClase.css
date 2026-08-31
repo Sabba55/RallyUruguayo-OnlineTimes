@@ -1,0 +1,359 @@
+/* ===================================
+   RESET Y CONFIGURACIÓN GENERAL
+   =================================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.font-argentino {
+    font-family: "Orbitron", serif;
+}
+
+/* ===================================
+   CLASIFICACIÓN P.E. - TABLAS POR CLASE
+   =================================== */
+
+.contenedor-tiempos {
+  background-color: #fff;
+  padding: 30px 10px 0px 10px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.titulo-pe {
+  font-size: 22px;
+  font-weight: 700;
+  color: #1a1a1a;
+  text-transform: uppercase;
+  font-family: "Orbitron", serif;
+  letter-spacing: 0.8px;
+}
+
+.titulo-tramo-pe {
+  color: rgb(185, 145, 70);
+  font-weight: 800;
+  margin-right: 7px;
+}
+
+.titulo-tramo-pe--power-stage {
+  color: #7c3aed;
+}
+
+.titulo-tramo-texto {
+  color: #111b28;
+  font-weight: 800;
+}
+
+.subtitulo-tramo-datos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  color: #111b28;
+  font-family: "Orbitron", serif;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.subtitulo-tramo-separador {
+  color: rgb(185, 145, 70);
+}
+
+.encabezado-clase {
+  background: #111b28 !important;
+  color: #fff;
+  font-size: 18px;
+  padding: 10px 14px;
+  border-radius: 6px;
+  font-family: 'Orbitron', serif;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.tabla-pe {
+  width: 100%;
+  border: 2px solid #e5e7eb;
+  border-top: none;
+  font-size: 14px;
+}
+
+.tabla-encabezado th {
+  background: #f4f4f4;
+  color: #1a1a1a;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 13px;
+  text-align: center;
+}
+
+.tabla-fila-datos:nth-child(odd) {
+  background-color: #f9fafb;
+}
+
+.tabla-fila-datos:nth-child(even) {
+  background-color: #fff;
+}
+
+.tabla-fila-datos:hover td {
+  background-color: #e3f2fd !important;
+}
+
+.celda-piloto {
+  line-height: 1.2;
+}
+
+.nombre-piloto {
+  font-weight: 700;
+  color: #1a1a1a;
+}
+
+.nombre-navegante {
+  font-weight: 700;
+  font-size: 13px;
+  color: #555;
+}
+
+.badge-pos {
+  background: linear-gradient(135deg, rgb(185, 145, 70) 0%, rgb(151, 117, 57) 100%);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 6px;
+  font-weight: 700;
+  box-shadow: 0 2px 4px rgba(211,176,109,0.35);
+}
+
+/* ===================================
+   CLASIFICACIÓN GENERAL
+   =================================== */
+
+.tabla-pe-clases {
+  width: 38%;
+}
+
+.tabla-general {
+  width: 62%;
+}
+
+.subtitulo-clase {
+  background: linear-gradient(135deg, rgb(185, 145, 70) 0%, rgb(160, 121, 54) 100%);
+  color: #ffffff;
+  padding: 6px 12px;
+  border-radius: 6px 6px 0 0;
+  margin-bottom: 0;
+  font-family: "Orbitron", serif;
+  font-size: 14.3px;
+  letter-spacing: 0.5px;
+  font-weight: 500;
+}
+
+/* ===================================
+   Piloto que viene ganando
+   =================================== */
+.tabla-pe-clases tbody tr:first-child .badge-pos {
+  background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);
+}
+
+.tabla-general tbody tr:first-child .badge-pos {
+  background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%) !important;
+}
+
+/* ===================================
+   POWER STAGE - Badge Violeta
+   =================================== */
+.badge-pos-power-stage {
+  background: linear-gradient(135deg, #7c3aed 0%, #6d28d9 100%) !important;
+  box-shadow: 0 2px 6px rgba(168, 85, 247, 0.4) !important;
+}
+
+/* ===================================
+   INDICADOR DE CAMBIO DE POSICIONES
+   =================================== */
+.celda-numero-piloto {
+  vertical-align: middle;
+  padding: 8px 4px !important;
+}
+
+.numero-piloto {
+  line-height: 1;
+  margin-bottom: 2px;
+}
+
+.indicador-posicion {
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 1;
+  margin-top: 3px;
+  
+}
+
+.indicador-posicion i {
+  font-size: 10px;
+  margin-right: 2px;
+}
+
+.indicador-posicion .text-success {
+  color: #10b981 !important;
+}
+
+.indicador-posicion .text-danger {
+  color: #ef4444 !important;
+}
+
+/* ===================================
+   Boton del indice
+   =================================== */
+.btn-categoria {
+  background: linear-gradient(135deg, rgb(185, 145, 70) 0%, rgb(160, 121, 54) 100%) !important;
+  color: white;
+  font-weight: 600;
+  border: none;
+  box-shadow: 0 2px 6px rgba(211,176,109,0.35);
+  transition: all 0.3s ease;
+  font-size: 14px;
+  font-family: 'Orbitron', serif;
+  padding: 10px 23px;   /* más grande*/
+  border-radius: 8px;
+  letter-spacing: 0.5px;
+}
+
+.btn-categoria:hover {
+  background: linear-gradient(135deg, rgb(201, 160, 82) 0%, rgb(175, 132, 60) 100%) !important;
+  transform: translateY(-2px);
+}
+
+.btn-categoria--oculta {
+  opacity: 0.45;
+  filter: grayscale(0.35);
+}
+
+/* ===================================
+   CONTENEDORES DE INDICES
+   =================================== */
+.contenedor-indice-principal {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 0px 20px;
+}
+
+.nav-pe-wrapper {
+  display: grid;
+  grid-template-columns: 64px minmax(0, 1fr) 64px;
+  align-items: center;
+  gap: 14px;
+  width: 100%;
+}
+
+.nav-pe-centro {
+  display: flex;
+  justify-content: center;
+  min-width: 0;
+}
+
+.nav-pe-lado {
+  display: flex;
+  align-items: center;
+}
+
+.nav-pe-lado--izq {
+  justify-content: flex-start;
+}
+
+.nav-pe-lado--der {
+  justify-content: flex-end;
+}
+
+.btn-nav-pe {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  height: 55px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(135deg, rgb(185, 145, 70) 0%, rgb(160, 121, 54) 100%);
+  color: #ffffff;
+  box-shadow: 0 2px 8px rgba(211, 176, 109, 0.35);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, opacity 0.2s ease;
+}
+
+.btn-nav-pe:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 14px rgba(211, 176, 109, 0.45);
+}
+
+.btn-nav-pe:disabled {
+  cursor: not-allowed;
+  opacity: 0.35;
+}
+
+.select-filtro-wrapper {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: #111b28;
+  color: #ffffff;
+  border-radius: 8px;
+  padding: 0;
+  width: 42px;
+  min-height: 42px;
+  box-shadow: 0 2px 6px rgba(17, 27, 40, 0.22);
+  overflow: hidden;
+}
+
+.select-filtro-wrapper svg {
+  pointer-events: none;
+}
+
+.select-filtro-wrapper select {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: transparent;
+  font-family: 'Orbitron', serif;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  opacity: 0;
+}
+
+.select-filtro-wrapper option {
+  color: #111b28;
+  background: #ffffff;
+}
+
+.botones-campeonato {
+  border-top: 1px solid #d7dde5;
+  padding-top: 14px;
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.badge-contador {
+  background: #111b28 !important;
+}
+
+@media (max-width: 1350px) {
+  .tabla-pe-clases {
+      width: 38%;
+  }
+
+  .tabla-general {
+    width: 62%;
+  }
+}
+

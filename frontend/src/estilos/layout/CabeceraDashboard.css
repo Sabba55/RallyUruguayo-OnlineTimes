@@ -1,0 +1,97 @@
+/* ===================================
+   CABECERA PRINCIPAL
+   =================================== */
+.header-rally {
+  background: #111b28;
+  position: relative;
+  z-index: 10;
+  overflow: visible;
+  border-bottom: 12px solid rgb(211, 176, 109);
+}
+
+.cabecera-rally-grid {
+  display: grid;
+  grid-template-columns: minmax(180px, 1fr) auto minmax(180px, 1fr);
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+  min-height: 92px;
+}
+
+.cabecera-rally-col {
+  display: flex;
+  align-items: center;
+  min-width: 0;
+}
+
+.cabecera-rally-col--izq {
+  justify-content: flex-start;
+}
+
+.cabecera-rally-col--centro {
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.cabecera-rally-col--der {
+  justify-content: flex-end;
+}
+
+/* Logo */
+.logo-rally {
+  height: 82px;
+  width: auto;
+  z-index: 3;
+}
+
+.logo-rally-derecha {
+  max-height: 108px;
+  max-width: 200px;
+  width: auto;
+  object-fit: contain;
+  z-index: 3;
+}
+
+/* Título */
+.titulo-rally {
+  z-index: 3;
+  font-size: 2rem;
+  letter-spacing: 1px;
+}
+
+.font-header-rally {
+  line-height: 0.95;
+  letter-spacing: 1.2px;
+}
+
+.subtitulo-rally {
+  color: rgb(211, 176, 109);
+  font-size: 1rem;
+  line-height: 1;
+  letter-spacing: 0.8px;
+}
+
+.z-index {
+  z-index: 5;
+}
+
+/* Botón volver */
+.header-rally .btn-volver {
+  background: linear-gradient(135deg, rgb(185, 145, 70) 0%, rgb(160, 121, 54) 100%);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 6px rgba(211, 176, 109, 0.35);
+}
+
+.header-rally .btn-volver:hover {
+  background: linear-gradient(135deg, rgb(201, 160, 82) 0%, rgb(175, 132, 60) 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(211, 176, 109, 0.4);
+}

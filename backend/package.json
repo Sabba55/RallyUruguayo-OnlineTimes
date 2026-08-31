@@ -1,0 +1,35 @@
+{
+  "name": "rally-argentino-backend",
+  "version": "1.0.0",
+  "description": "Backend para Dashboard de Rally Argentino - Tiempos en vivo",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "node --watch src/index.js",
+    "start": "node src/index.js",
+    "generar-pdf": "node src/comandos/generarPDF.js",
+    "generar-password-hash": "node src/comandos/generarPasswordHash.js"
+  },
+  "keywords": [
+    "rally",
+    "argentino",
+    "tiempos",
+    "firebase",
+    "express"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "compression": "^1.8.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-rate-limit": "^8.2.1",
+    "pdfkit": "^0.18.0",
+    "pg": "^8.16.3"
+  },
+  "devDependencies": {
+    "baseline-browser-mapping": "^2.10.0",
+    "nodemon": "^3.0.2"
+  }
+}

@@ -1,0 +1,4 @@
+CREATE TABLE IF NOT EXISTS tiempos_competidores (
+  nro INTEGER PRIMARY KEY,
+  finalizo VARCHAR(10) NOT NULL DEFAULT ''
+);

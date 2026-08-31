@@ -1,0 +1,61 @@
+{
+  "versionFormato": 1,
+  "carreraId": "2026-carrera-03",
+  "anio": 2026,
+  "numeroFecha": 3,
+  "nombre": "Rally del Petróleo y los Dinosaurios",
+  "slug": "rally-del-petroleo-y-los-dinosaurios",
+  "fechaArchivo": "2026-06-18T18:55:35.271Z",
+  "cantidadRegistros": {
+    "rally": 1,
+    "tramos": 11,
+    "tiempos": 53,
+    "inscriptos": 53,
+    "horariosE1": 53,
+    "horariosE2": 52,
+    "penalizaciones": 9,
+    "shakedown": 53
+  },
+  "archivos": {
+    "rally.json": {
+      "coleccion": "rally",
+      "registros": 1,
+      "bytes": 298
+    },
+    "tramos.json": {
+      "coleccion": "tramos",
+      "registros": 11,
+      "bytes": 3068
+    },
+    "tiempos.json": {
+      "coleccion": "tiempos",
+      "registros": 53,
+      "bytes": 27381
+    },
+    "inscriptos.json": {
+      "coleccion": "inscriptos",
+      "registros": 53,
+      "bytes": 15190
+    },
+    "horariosE1.json": {
+      "coleccion": "horariosE1",
+      "registros": 53,
+      "bytes": 16296
+    },
+    "horariosE2.json": {
+      "coleccion": "horariosE2",
+      "registros": 52,
+      "bytes": 15944
+    },
+    "penalizaciones.json": {
+      "coleccion": "penalizaciones",
+      "registros": 9,
+      "bytes": 2818
+    },
+    "shakedown.json": {
+      "coleccion": "shakedown",
+      "registros": 53,
+      "bytes": 16985
+    }
+  }
+}

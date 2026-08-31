@@ -1,0 +1,254 @@
+.font-argentino {
+    font-family: "Orbitron", serif;
+}
+/* ===================================
+   TARJETAS DE GANADORES - PODIO
+   =================================== */
+
+.contenedor-tarjetas-ganadores {
+  background-color: #1D1D1B;
+  padding: 30px 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.titulo-ganadores {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-bottom: 25px;
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.titulo-ganadores::before,
+.titulo-ganadores::after {
+  content: '';
+  flex: 1;
+  height: 4px;
+  background: linear-gradient(90deg, transparent 0%, #018BEB 50%, transparent 100%);
+}
+
+/* ===================================
+   GRID DE TARJETAS
+   =================================== */
+
+.grid-tarjetas-ganadores {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 407px));
+  gap: 20px;
+  max-width: 1400px;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+/* ===================================
+   TARJETA INDIVIDUAL
+   =================================== */
+
+.tarjeta-ganador {
+  background: #ffffff;
+  border-radius: 2%;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* ===================================
+   ENCABEZADO DE TARJETA
+   =================================== */
+
+.encabezado-tarjeta {
+  background: linear-gradient(135deg, #018beb 0%, #237AA7 100%);
+  padding: 12px 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nombre-categoria {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin: 0;
+}
+
+.estado-etiqueta {
+  background-color: rgba(19, 19, 19, 0.2);
+  color: #ffffff;
+  padding: 4px 12px;
+  border-radius: 4px;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+}
+
+/* ===================================
+   CUERPO DE TARJETA
+   =================================== */
+
+.cuerpo-tarjeta {
+  padding: 0;
+  background: #f5f5f5;
+}
+
+/* ===================================
+   FILAS DE PODIO
+   =================================== */
+
+.fila-podio {
+  display: grid;
+  grid-template-columns: 50px 1fr 110px;
+  gap: 0;
+  align-items: center;
+  padding: 0;
+  border-bottom: 2px solid #e0e0e0;
+  transition: background-color 0.2s ease;
+  min-height: 60px;
+}
+
+.fila-podio:last-child {
+  border-bottom: none;
+}
+
+/* Fondo según posición - Filas pares (2da posición) */
+.fila-podio.posicion-2 {
+  background: #ffffff;
+}
+
+/* Fondo según posición - Filas impares (3ra posición) */
+.fila-podio.posicion-1, .fila-podio.posicion-3 {
+  background: #f9fafb;
+}
+
+/* ===================================
+   COLUMNAS DE PODIO
+   =================================== */
+
+.columna-posicion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 0;
+}
+
+.columna-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 12px 12px;
+}
+
+.columna-tiempo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 12px 18px;
+}
+
+/* ===================================
+   BADGES DE POSICIÓN
+   =================================== */
+
+.badge-podio {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  font-size: 15px;
+  width: 32px;
+  height: 32px;
+  border-radius: 6px;
+  color: #ffffff;
+  background: linear-gradient(135deg, #0170c4 0%, #018BEB 100%);
+}
+
+/* ===================================
+   INFORMACIÓN DEL PILOTO
+   =================================== */
+
+.nombres-piloto {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  line-height: 1.2;
+}
+
+.nombre-piloto-linea {
+  font-weight: 700;
+  font-size: 15px;
+  color: #1a1a1a;
+  letter-spacing: 0.3px;
+}
+
+.nombre-navegante-linea {
+  font-weight: 700;
+  font-size: 15px;
+  color: #414141;
+  letter-spacing: 0.3px;
+}
+
+.info-vehiculo {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  margin-top: 1px;
+}
+
+.nombre-vehiculo {
+  font-size: 13px;
+  color: #666;
+  font-weight: 600;
+}
+
+.logo-marca-vehiculo {
+  height: 14px;
+  width: auto;
+  max-width: 40px;
+  object-fit: contain;
+  margin-right: 3px;
+}
+
+/* ===================================
+   TIEMPO Y DIFERENCIA
+   =================================== */
+
+.tiempo-ganador {
+  font-weight: 700;
+  font-size: 17px;
+  color: #1a1a1a;
+  letter-spacing: 0.4px;
+  line-height: 1.2;
+}
+
+.diferencia-tiempo {
+  font-weight: 700;
+  font-size: 16px;
+  color: #018BEB;
+  letter-spacing: 0.4px;
+  line-height: 1;
+}
+
+/* ===================================
+   RESPONSIVE
+   =================================== */
+
+@media (max-width: 1350px) {
+  .grid-tarjetas-ganadores {
+  grid-template-columns: repeat(auto-fit, minmax(350px, 390px));
+  }
+}
+
+@media (max-width: 768px) {
+  .grid-tarjetas-ganadores {
+  grid-template-columns: repeat(auto-fit, minmax(350px, 390px));
+  }
+}

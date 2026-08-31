@@ -1,0 +1,128 @@
+[
+  {
+    "id": "104",
+    "tiempo": "0:10.0",
+    "navegante": "Gonzalo MARTÍNEZ",
+    "motivo": "Adelanto de largada",
+    "piloto": "Fernando MULLER",
+    "peocurrido": "8",
+    "nro": "104",
+    "control": "CH8",
+    "ultima_actualizacion": {
+      "_seconds": 1779634126,
+      "_nanoseconds": 600000000
+    }
+  },
+  {
+    "id": "116",
+    "control": "CH7",
+    "peocurrido": "7",
+    "motivo": "Deja camino",
+    "piloto": "Pablo ALESSANDRINI",
+    "tiempo": "1:00.0",
+    "nro": "116",
+    "navegante": "Ignacio GOMEZ",
+    "ultima_actualizacion": {
+      "_seconds": 1779636586,
+      "_nanoseconds": 878000000
+    }
+  },
+  {
+    "id": "126",
+    "motivo": "Decision Comisaria",
+    "navegante": "Joaquín ROJAS",
+    "control": "CH5",
+    "nro": "126",
+    "tiempo": "1:00.0",
+    "peocurrido": "5",
+    "piloto": "Gustavo ROJAS",
+    "ultima_actualizacion": {
+      "_seconds": 1779568066,
+      "_nanoseconds": 34000000
+    }
+  },
+  {
+    "id": "131",
+    "motivo": "Deja camino",
+    "tiempo": "1:00.0",
+    "control": "CH7",
+    "peocurrido": "7",
+    "navegante": "Ezequiel REBOLLEDO",
+    "nro": "131",
+    "piloto": "Matías AVILA",
+    "ultima_actualizacion": {
+      "_seconds": 1779646726,
+      "_nanoseconds": 297000000
+    }
+  },
+  {
+    "id": "133",
+    "motivo": "Art. 34.1.5",
+    "navegante": "Agustín KUNZ",
+    "control": "CH3A",
+    "nro": "133",
+    "piloto": "Leandro MARTÍNEZ",
+    "tiempo": "0:30.0",
+    "peocurrido": "4",
+    "ultima_actualizacion": {
+      "_seconds": 1779567765,
+      "_nanoseconds": 528000000
+    }
+  },
+  {
+    "id": "135",
+    "nro": "135",
+    "piloto": "Julio QUILODRAN",
+    "motivo": "Registro Atrasado",
+    "control": "CH2",
+    "tiempo": "1:20.0",
+    "peocurrido": "2",
+    "navegante": "Pablo QUILODRAN",
+    "ultima_actualizacion": {
+      "_seconds": 1779550425,
+      "_nanoseconds": 354000000
+    }
+  },
+  {
+    "id": "22",
+    "piloto": "Walter D'AGOSTINI",
+    "tiempo": "0:10.0",
+    "peocurrido": "8",
+    "motivo": "Adelanto de largada",
+    "navegante": "Mauricio OBRADOR",
+    "nro": "22",
+    "control": "CH8",
+    "ultima_actualizacion": {
+      "_seconds": 1779633166,
+      "_nanoseconds": 833000000
+    }
+  },
+  {
+    "id": "52",
+    "nro": "52",
+    "piloto": "José IRIBARREN",
+    "navegante": "José BRUSCO",
+    "peocurrido": "7",
+    "tiempo": "1:00.0",
+    "motivo": "Deja camino",
+    "control": "CH7",
+    "ultima_actualizacion": {
+      "_seconds": 1781792967,
+      "_nanoseconds": 315000000
+    }
+  },
+  {
+    "id": "77",
+    "navegante": "Gerardo SCICOLONE",
+    "peocurrido": "3",
+    "control": "CH3",
+    "tiempo": "1:20.0",
+    "nro": "77",
+    "motivo": "Registro Atrasado",
+    "piloto": "Sabrina SCICOLONE",
+    "ultima_actualizacion": {
+      "_seconds": 1779552885,
+      "_nanoseconds": 376000000
+    }
+  }
+]

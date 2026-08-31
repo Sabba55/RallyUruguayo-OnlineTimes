@@ -1,0 +1,190 @@
+/* ===================================
+   RESET Y CONFIGURACIÓN GENERAL
+   =================================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.font-argentino {
+    font-family: "Orbitron", serif;
+}
+
+/* ===================================
+   CONTENEDOR PRINCIPAL PENALIZACIONES
+   =================================== */
+
+.contenedor-penalizaciones {
+  background-color: #fff;
+  padding: 30px 10px 30px 10px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.titulo-penalizaciones {
+  font-size: 32px;
+  font-weight: 700;
+  color: #1a1a1a;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+/* Badge para el número total */
+.badge-total-penalizaciones {
+  display: inline-block;
+  background: linear-gradient(135deg, #dc3545 0%, #c82333 100%);
+  color: white;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-weight: 700;
+  margin-left: 10px;
+  box-shadow: 0 2px 6px rgba(220,53,69,0.3);
+}
+
+/* ===================================
+   TABLA DE PENALIZACIONES
+   =================================== */
+
+.tabla-penalizaciones {
+  width: 100%;
+  border: 2px solid #e5e7eb;
+  font-size: 14px;
+}
+
+/* Anchos específicos de columnas */
+.tabla-penalizaciones th:nth-child(1),
+.tabla-penalizaciones td:nth-child(1) {
+  width: 7%;
+}
+
+.tabla-penalizaciones th:nth-child(2),
+.tabla-penalizaciones td:nth-child(2) {
+  width: 40%;
+}
+
+.tabla-penalizaciones th:nth-child(3),
+.tabla-penalizaciones td:nth-child(3) {
+  width: 8%;
+}
+
+.tabla-penalizaciones th:nth-child(4),
+.tabla-penalizaciones td:nth-child(4) {
+  width: 15%;
+}
+
+.tabla-penalizaciones th:nth-child(5),
+.tabla-penalizaciones td:nth-child(5) {
+  width: 30%;
+}
+
+.tabla-encabezado-penalizaciones th {
+  background: #111b28;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 13px;
+  text-align: center;
+  vertical-align: middle;
+  padding: 12px 8px;
+}
+
+.tabla-fila-datos-penalizaciones:nth-child(odd) {
+  background-color: #f3f4f6;
+}
+
+.tabla-fila-datos-penalizaciones:nth-child(even) {
+  background-color: #ffffff;
+}
+
+.tabla-fila-datos-penalizaciones:hover td {
+  background-color: rgba(211, 176, 109, 0.18) !important;
+}
+
+.tabla-fila-datos-penalizaciones td {
+    vertical-align: middle;
+    padding: 12px 8px;
+    font-size: 15px;
+    justify-content: center;
+}
+
+/* ===================================
+   BADGE DE NÚMERO
+   =================================== */
+
+.badge-nro-penalizaciones {
+  background: linear-gradient(135deg, #dc3545 0%, #c82333 100%);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 6px;
+  font-weight: 700;
+  box-shadow: 0 2px 4px rgba(220,53,69,0.2);
+}
+
+/* ===================================
+   CELDA DE BINOMIO (PILOTO / NAVEGANTE)
+   =================================== */
+
+.celda-binomio-penalizaciones {
+  line-height: 1.4;
+}
+
+.nombre-piloto-penalizaciones {
+  font-weight: 700;
+  color: #1a1a1a;
+}
+
+.separador-binomio-penalizaciones {
+  font-weight: 400;
+  color: #666;
+  margin: 0 6px;
+}
+
+.nombre-navegante-penalizaciones {
+  font-weight: 700;
+  color: #1a1a1a;
+}
+
+/* ===================================
+   BADGE DE CONTROL (PE)
+   =================================== */
+
+.badge-control-penalizaciones {
+  display: inline-block;
+  color: black;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+/* ===================================
+   TIEMPO DE PENALIZACIÓN
+   =================================== */
+
+.tiempo-penalizacion {
+  font-weight: 700;
+  color: #dc3545;
+  font-size: 16px;
+}
+
+/* ===================================
+   MOTIVO DE PENALIZACIÓN
+   =================================== */
+
+.motivo-penalizacion {
+  font-weight: 600;
+  color: #141414;
+  font-size: 16px;
+}
+
+/* ===================================
+   RESPONSIVE
+   =================================== */
+@media (max-width: 1024px) { 
+  .contenedor-penalizaciones {
+      display: flex;
+      justify-content: center;
+  }
+  .tabla-penalizaciones {
+    width: 90%;
+  }
+}

@@ -1,0 +1,6 @@
+CREATE TABLE IF NOT EXISTS rally (
+  id_rally INTEGER PRIMARY KEY,
+  nombre VARCHAR(255) NOT NULL,
+  subtitulo VARCHAR(255) NOT NULL,
+  en_carrera VARCHAR(10) NOT NULL DEFAULT 'no'
+);
