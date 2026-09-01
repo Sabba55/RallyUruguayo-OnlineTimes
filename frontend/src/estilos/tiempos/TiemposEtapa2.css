@@ -8,7 +8,7 @@
 }
 
 .font-argentino {
-    font-family: "Orbitron", serif;
+    font-family: "Exo 2", serif;
 }
 
 /* ===================================
@@ -23,11 +23,11 @@
 }
 
 .titulo-etapa2 {
-  font-family: "Orbitron", serif;
-  font-size: 22px;
+  font-family: "Exo 2", serif;
+  font-size: 23px;
   font-weight: 800;
   color: #1a1a1a;
-  letter-spacing: 0.8px;
+  letter-spacing: 1.1px;
   text-transform: uppercase;
 }
 
@@ -52,10 +52,10 @@
   justify-content: center;
   gap: 10px;
   color: #111b28;
-  font-family: "Orbitron", serif;
-  font-size: 14px;
+  font-family: "Exo 2", serif;
+  font-size: 15.5px;
   font-weight: 700;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.8px;
   text-transform: uppercase;
 }
 
@@ -120,9 +120,9 @@
   font-size: 18px;
   padding: 10px 14px;
   border-radius: 6px;
-  font-family: 'Orbitron', serif;
+  font-family: 'Exo 2', serif !important;
   font-weight: 700;
-  letter-spacing: 1px;
+  letter-spacing: 1.2px;
 }
 
 .tabla-etapa2-pe {
@@ -224,10 +224,10 @@
   padding: 6px 12px;
   border-radius: 6px 6px 0 0;
   margin-bottom: 0;
-  font-family: "Orbitron", serif;
+  font-family: "Exo 2", serif;
   font-size: 14.5px;
-  letter-spacing: 0.5px;
-  font-weight: 500;
+  letter-spacing: 1px;
+  font-weight: 600;
 }
 
 /* ===================================
@@ -243,12 +243,12 @@
 .btn-categoria-etapa2 {
   background: rgb(185, 145, 70) !important;
   color: white;
-  font-weight: 600;
+  font-weight: 700 !important;
   border: none;
   box-shadow: 0 2px 6px rgba(211, 176, 109, 0.3) !important;
   transition: all 0.3s ease;
   font-size: 14px;
-  font-family: 'Orbitron', serif;
+  font-family: 'Exo 2', serif !important;
   padding: 10px 23px;   /* más grande*/
   border-radius: 8px;
   letter-spacing: 0.5px;
@@ -293,8 +293,8 @@
   outline: none;
   background: transparent;
   color: transparent;
-  font-family: 'Orbitron', serif;
-  font-size: 14px;
+  font-family: 'Exo 2', serif !important;
+  font-size: 16px !important;
   font-weight: bold;
   cursor: pointer;
   opacity: 0;

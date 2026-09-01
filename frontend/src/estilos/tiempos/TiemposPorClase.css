@@ -8,7 +8,7 @@
 }
 
 .font-argentino {
-    font-family: "Orbitron", serif;
+    font-family: "Exo 2", serif;
 }
 
 /* ===================================
@@ -23,12 +23,12 @@
 }
 
 .titulo-pe {
-  font-size: 22px;
+  font-size: 23px;
   font-weight: 700;
   color: #1a1a1a;
   text-transform: uppercase;
-  font-family: "Orbitron", serif;
-  letter-spacing: 0.8px;
+  font-family: "Exo 2", serif;
+  letter-spacing: 1.1px;
 }
 
 .titulo-tramo-pe {
@@ -52,10 +52,10 @@
   justify-content: center;
   gap: 10px;
   color: #111b28;
-  font-family: "Orbitron", serif;
-  font-size: 14px;
+  font-family: "Exo 2", serif;
+  font-size: 15.5px;
   font-weight: 700;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.8px;
   text-transform: uppercase;
 }
 
@@ -69,9 +69,9 @@
   font-size: 18px;
   padding: 10px 14px;
   border-radius: 6px;
-  font-family: 'Orbitron', serif;
+  font-family: 'Exo 2', serif;
   font-weight: 700;
-  letter-spacing: 1px;
+  letter-spacing: 1.2px;
 }
 
 .tabla-pe {
@@ -144,10 +144,10 @@
   padding: 6px 12px;
   border-radius: 6px 6px 0 0;
   margin-bottom: 0;
-  font-family: "Orbitron", serif;
+  font-family: "Exo 2", serif;
   font-size: 14.3px;
-  letter-spacing: 0.5px;
-  font-weight: 500;
+  letter-spacing: 1px;
+  font-weight: 600;
 }
 
 /* ===================================
@@ -209,13 +209,13 @@
 .btn-categoria {
   background: linear-gradient(135deg, rgb(185, 145, 70) 0%, rgb(160, 121, 54) 100%) !important;
   color: white;
-  font-weight: 600;
+  font-weight: 700 !important;
   border: none;
   box-shadow: 0 2px 6px rgba(211,176,109,0.35);
   transition: all 0.3s ease;
   font-size: 14px;
-  font-family: 'Orbitron', serif;
-  padding: 10px 23px;   /* más grande*/
+  font-family: 'Exo 2', serif !important;
+  padding: 10px 23px;  
   border-radius: 8px;
   letter-spacing: 0.5px;
 }
@@ -320,8 +320,8 @@
   outline: none;
   background: transparent;
   color: transparent;
-  font-family: 'Orbitron', serif;
-  font-size: 14px;
+  font-family: 'Exo 2', serif !important;
+  font-size: 16px !important;
   font-weight: bold;
   cursor: pointer;
   opacity: 0;
