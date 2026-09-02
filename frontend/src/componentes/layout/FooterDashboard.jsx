@@ -62,7 +62,7 @@ function FooterDashboard() {
         {/* FILA 3: Sponsors */}
         <div className="footer-fila footer-fila-sponsors">
           {/* SPONSORS PRINCIPALES */}
-          <div className="mb-2">
+          {/* <div className="mb-2">
             <div className="d-flex justify-content-center align-items-center gap-2 flex-wrap mb-2">
               {sponsorsPrincipales.map((rutaImagen, indice) => (
                 <div key={indice} className="sponsor-principal-contenedor">
@@ -74,10 +74,10 @@ function FooterDashboard() {
                 </div>
               ))}
             </div>
-          </div>
+          </div> */}
 
           {/* SPONSORS SECUNDARIOS */}
-          <div className="mb-3">
+          {/* <div className="mb-3">
             <div className="d-flex justify-content-center align-items-center flex-wrap">
               {sponsorsSecundarios.map((rutaImagen, indice) => (
                 <div key={indice} className="sponsor-secundario-contenedor">
@@ -89,7 +89,7 @@ function FooterDashboard() {
                 </div>
               ))}
             </div>
-          </div>
+          </div> */}
         </div>
 
         {/* FILA 4: Información de desarrollo */}

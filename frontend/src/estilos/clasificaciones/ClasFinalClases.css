@@ -8,7 +8,7 @@
 }
 
 .font-argentino {
-    font-family: "Orbitron", serif;
+  font-family: "Exo 2", serif;
 }
 
 .badge-contador {
@@ -38,7 +38,7 @@
    =================================== */
 
 .encabezado-clase {
-  background: linear-gradient(135deg, #1a1a1a 0%, #2b2b2b 100%);
+  background: #111b28;  
   color: #fff;
   font-size: 18px;
   padding: 10px 14px;
@@ -62,7 +62,7 @@
 }
 
 .tabla-encabezado-clase {
-    background: linear-gradient(135deg, #1a1a1a 0%, #2b2b2b 100%);
+  background: #111b28;
 }
 
 .tabla-encabezado-clase th {
@@ -109,7 +109,7 @@
 }
 
 .badge-pos-clase {
-  background: linear-gradient(135deg, #0170c4 0%, #018BEB 100%);
+  background: linear-gradient(135deg, rgb(185, 145, 70) 0%, rgb(160, 121, 54) 100%) !important;
   color: white;
   padding: 5px 10px;
   border-radius: 6px;
@@ -176,14 +176,14 @@
    Boton del índice
    =================================== */
 .btn-categoria {
-  background: linear-gradient(135deg, #0170c4 0%, #018BEB 100%);
+  background: linear-gradient(135deg, rgb(185, 145, 70) 0%, rgb(160, 121, 54) 100%) !important;
   color: white;
-  font-weight: 600;
+  font-weight: 700 !important;
   border: none;
   box-shadow: 0 2px 6px rgba(1,139,235,0.3);
   transition: all 0.3s ease;
   font-size: 14px;
-  font-family: 'Orbitron', serif;
+  font-family: "Exo 2", serif;
   padding: 10px 23px;   /* más grande*/
   border-radius: 8px;
   letter-spacing: 0.5px;
@@ -274,8 +274,8 @@
   outline: none;
   background: transparent;
   color: transparent;
-  font-family: 'Orbitron', serif;
-  font-size: 14px;
+  font-family: "Exo 2", serif;
+  font-size: 16px !important;
   font-weight: bold;
   cursor: pointer;
   opacity: 0;
