@@ -14,6 +14,97 @@ function ClasFinalEtapa2({ onVolver }) {
   const [cargandoInicial, setCargandoInicial] = useState(true);
   const [error, setError] = useState(null);
   const [pilotosPorClase, setPilotosPorClase] = useState({});
+  const [categoriasOcultas, setCategoriasOcultas] = useState([]);
+  const claveCategoriasOcultas = 'clas_final_etapa2_categorias_ocultas';
+
+  const guardarCategoriasOcultas = (ocultas) => {
+    localStorage.setItem(claveCategoriasOcultas, JSON.stringify({
+      categorias: ocultas,
+      timestamp: Date.now()
+    }));
+  };
+
+  useEffect(() => {
+    try {
+      const guardado = JSON.parse(localStorage.getItem(claveCategoriasOcultas) || 'null');
+      if (!guardado) {
+        setCategoriasOcultas([]);
+        return;
+      }
+
+      const unaHora = 60 * 60 * 1000;
+      if (Date.now() - guardado.timestamp > unaHora) {
+        localStorage.removeItem(claveCategoriasOcultas);
+        setCategoriasOcultas([]);
+        return;
+      }
+
+      setCategoriasOcultas(guardado.categorias || []);
+    } catch {
+      setCategoriasOcultas([]);
+    }
+  }, []);
+
+  const cambiarCategoriasOcultas = (nuevasOcultas) => {
+    setCategoriasOcultas(nuevasOcultas);
+    guardarCategoriasOcultas(nuevasOcultas);
+  };
+
+  const aplicarFiltroCategorias = (valor, clasesDisponibles) => {
+    if (!valor) return;
+
+    if (valor === '__todas__') {
+      cambiarCategoriasOcultas([]);
+      return;
+    }
+
+    if (valor === '__ninguna__') {
+      cambiarCategoriasOcultas(clasesDisponibles);
+      return;
+    }
+
+    if (categoriasOcultas.includes(valor)) {
+      cambiarCategoriasOcultas(categoriasOcultas.filter((clase) => clase !== valor));
+      return;
+    }
+
+    cambiarCategoriasOcultas([...categoriasOcultas, valor]);
+  };
+
+  const renderizarSelectFiltroCategorias = (clasesDisponibles, nombreClase) => {
+    if (clasesDisponibles.length === 0) return null;
+
+    return (
+      <div className="select-filtro-wrapper" title="Filtrar categorías">
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+          fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"
+          aria-hidden="true">
+          <path d="M13 5h8" />
+          <path d="M13 12h8" />
+          <path d="M13 19h8" />
+          <path d="m3 17 2 2 4-4" />
+          <rect x="3" y="4" width="6" height="6" rx="1" />
+        </svg>
+        <select
+          aria-label="Filtrar categorías"
+          defaultValue=""
+          onChange={(evento) => {
+            aplicarFiltroCategorias(evento.target.value, clasesDisponibles);
+            evento.target.value = '';
+          }}
+        >
+          <option value="" disabled hidden>Filtrar categorías</option>
+          <option value="__todas__">Mostrar todas</option>
+          <option value="__ninguna__">Ocultar todas</option>
+          {clasesDisponibles.map((clase) => (
+            <option key={clase} value={clase}>
+              {categoriasOcultas.includes(clase) ? '☐' : '☑'} {nombreClase(clase)}
+            </option>
+          ))}
+        </select>
+      </div>
+    );
+  };
 
   useEffect(() => {
     cargarDatos(true);
@@ -399,17 +490,20 @@ function ClasFinalEtapa2({ onVolver }) {
                 {categoriasOficiales.map((clase) => (
                   <button
                     key={clase}
-                    className="btn btn-categoria-etapa2"
+                    className={`btn btn-categoria-etapa2 ${categoriasOcultas.includes(clase) ? 'btn-categoria--oculta' : ''}`}
                     onClick={() => {
+                      if (categoriasOcultas.includes(clase)) return;
                       const elemento = document.getElementById(`categoria-${clase}`);
                       if (elemento) {
                         elemento.scrollIntoView({ behavior: 'smooth', block: 'start' });
                       }
                     }}
+                    title={categoriasOcultas.includes(clase) ? 'Categoría oculta' : `Ir a ${clase}`}
                   >
                     {clase}
                   </button>
                 ))}
+                {renderizarSelectFiltroCategorias(categoriasOficiales, (c) => c)}
               </div>
             </div>
           );
@@ -436,17 +530,20 @@ function ClasFinalEtapa2({ onVolver }) {
                 {categoriasSecundarias.map((clase) => (
                   <button
                     key={clase}
-                    className="btn-categoria-secundario"
+                    className={`btn-categoria-secundario ${categoriasOcultas.includes(clase) ? 'btn-categoria--oculta' : ''}`}
                     onClick={() => {
+                      if (categoriasOcultas.includes(clase)) return;
                       const elemento = document.getElementById(`categoria-${clase}`);
                       if (elemento) {
                         elemento.scrollIntoView({ behavior: 'smooth', block: 'start' });
                       }
                     }}
+                    title={categoriasOcultas.includes(clase) ? 'Categoría oculta' : `Ir a ${obtenerNombreSimplificado(clase)}`}
                   >
                     {obtenerNombreSimplificado(clase)}
                   </button>
                 ))}
+                {renderizarSelectFiltroCategorias(categoriasSecundarias, obtenerNombreSimplificado)}
               </div>
             </div>
           );
@@ -490,7 +587,9 @@ function ClasFinalEtapa2({ onVolver }) {
           <>
 
           {/* CLASIFICACIONES POR CLASE */}
-          {ordenarCategorias(Object.keys(pilotosPorClase)).map((clase) => {
+          {ordenarCategorias(Object.keys(pilotosPorClase))
+            .filter((clase) => !categoriasOcultas.includes(clase))
+            .map((clase) => {
             const pilotos = pilotosPorClase[clase];
             const mejorTiempo = pilotos.length ? pilotos[0].totalSegundos : 0;
 
