@@ -259,87 +259,94 @@ function TiemposPorClase({ pe }) {
 
   return (
     <div className="contenedor-tiempos">
-      <div className="d-flex justify-content-center align-items-center mb-4 flex-column">
-        <h2 className="titulo-pe text-center mb-2">
-          <span className={`titulo-tramo-pe ${esPowerStage ? 'titulo-tramo-pe--power-stage' : ''}`}>
-            PE{numeroPE}
-          </span>
-          <span className="titulo-tramo-texto"> | {nombreTramo}</span>
-        </h2>
-        <div className="subtitulo-tramo-datos mb-3">
-          <span>Distancia: {distanciaTramo} km</span>
-          <span className="subtitulo-tramo-separador">|</span>
-          <span>Hora: {horaTramo}</span>
+      <div className="nav-pe-wrapper mb-4">
+        {/* Div 1: navegación anterior */}
+        <div className="nav-pe-lado nav-pe-lado--izq">
+          {mostrarBotonesNav && (
+            <button
+              className="btn-nav-pe"
+              onClick={() => navegarAPe(peAnterior)}
+              disabled={peAnterior === null}
+              title={peAnterior !== null ? `Ir a PE ${peAnterior}` : 'No hay PE anterior disponible'}
+              aria-label="PE anterior"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2.5">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
+              </svg>
+            </button>
+          )}
         </div>
 
-        <div className="nav-pe-wrapper">
-          <div className="nav-pe-lado nav-pe-lado--izq">
-            {mostrarBotonesNav && (
-              <button
-                className="btn-nav-pe"
-                onClick={() => navegarAPe(peAnterior)}
-                disabled={peAnterior === null}
-                title={peAnterior !== null ? `Ir a PE ${peAnterior}` : 'No hay PE anterior disponible'}
-                aria-label="PE anterior"
-              >
-                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2.5">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
-                </svg>
-              </button>
-            )}
+        {/* Div 2: contenido central (nombre/datos, botones, contador) */}
+        <div className="nav-pe-centro d-flex flex-column align-items-center">
+
+          {/* Sub-div: nombre del tramo + datos */}
+          <div className="datos-tramo-pe d-flex flex-column align-items-center">
+            <h2 className="titulo-pe text-center mb-2">
+              <span className={`titulo-tramo-pe ${esPowerStage ? 'titulo-tramo-pe--power-stage' : ''}`}>
+                PE{numeroPE}
+              </span>
+              <span className="titulo-tramo-texto"> | {nombreTramo}</span>
+            </h2>
+            <div className="subtitulo-tramo-datos mb-3">
+              <span>Distancia: {distanciaTramo} km</span>
+              <span className="subtitulo-tramo-separador">|</span>
+              <span>Hora: {horaTramo}</span>
+            </div>
           </div>
 
-          <div className="nav-pe-centro">
-            {categorias.length > 0 && (
-              <div className="contenedor-indice-principal mb-3">
-                <div className="botones-campeonato">
-                  {categorias.map((categoria) => (
-                    <button
-                      key={categoria.clase}
-                      className={`btn-categoria ${categoriasOcultas.includes(categoria.clase) ? 'btn-categoria--oculta' : ''}`}
-                      onClick={() => scrollACategoria(categoria)}
-                      title={categoriasOcultas.includes(categoria.clase) ? 'Categoría oculta' : `Ir a ${categoria.nombre_mostrar || categoria.clase}`}
-                    >
-                      {categoria.nombre_mostrar || categoria.clase}
-                    </button>
-                  ))}
-                  {renderizarSelectFiltroCategorias()}
-                </div>
+          {/* Sub-div: botones de categorías */}
+          {categorias.length > 0 && (
+            <div className="contenedor-indice-principal mb-3">
+              <div className="botones-campeonato">
+                {categorias.map((categoria) => (
+                  <button
+                    key={categoria.clase}
+                    className={`btn-categoria ${categoriasOcultas.includes(categoria.clase) ? 'btn-categoria--oculta' : ''}`}
+                    onClick={() => scrollACategoria(categoria)}
+                    title={categoriasOcultas.includes(categoria.clase) ? 'Categoría oculta' : `Ir a ${categoria.nombre_mostrar || categoria.clase}`}
+                  >
+                    {categoria.nombre_mostrar || categoria.clase}
+                  </button>
+                ))}
+                {renderizarSelectFiltroCategorias()}
               </div>
-            )}
-          </div>
+            </div>
+          )}
 
-          <div className="nav-pe-lado nav-pe-lado--der">
-            {mostrarBotonesNav && (
-              <button
-                className="btn-nav-pe"
-                onClick={() => navegarAPe(peSiguiente)}
-                disabled={peSiguiente === null}
-                title={peSiguiente !== null ? `Ir a PE ${peSiguiente}` : 'No hay PE siguiente disponible'}
-                aria-label="PE siguiente"
-              >
-                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2.5">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
-                </svg>
-              </button>
-            )}
+          {/* Sub-div: contador */}
+          <div className="mt-3 d-flex align-items-center gap-2">
+            <span className="text-muted" style={{ fontSize: '0.9rem' }}>
+              Próxima actualización en:
+            </span>
+            <span
+              className="badge badge-contador bg-primary d-flex align-items-center gap-1"
+              style={{ fontSize: '0.95rem', padding: '0.4rem 0.8rem' }}
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" viewBox="0 0 16 16">
+                <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z" />
+                <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z" />
+              </svg>
+              {segundosRestantes}s
+            </span>
           </div>
         </div>
 
-        <div className="mt-3 d-flex align-items-center gap-2">
-          <span className="text-muted" style={{ fontSize: '0.9rem' }}>
-            Próxima actualización en:
-          </span>
-          <span
-            className="badge badge-contador bg-primary d-flex align-items-center gap-1"
-            style={{ fontSize: '0.95rem', padding: '0.4rem 0.8rem' }}
-          >
-            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" viewBox="0 0 16 16">
-              <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z" />
-              <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z" />
-            </svg>
-            {segundosRestantes}s
-          </span>
+        {/* Div 3: navegación siguiente */}
+        <div className="nav-pe-lado nav-pe-lado--der">
+          {mostrarBotonesNav && (
+            <button
+              className="btn-nav-pe"
+              onClick={() => navegarAPe(peSiguiente)}
+              disabled={peSiguiente === null}
+              title={peSiguiente !== null ? `Ir a PE ${peSiguiente}` : 'No hay PE siguiente disponible'}
+              aria-label="PE siguiente"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2.5">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+              </svg>
+            </button>
+          )}
         </div>
       </div>
 

@@ -264,28 +264,32 @@ function TiemposEtapa2({ pe }) {
 
   return (
     <div className="contenedor-tiempos-etapa2">
-      <div className="d-flex justify-content-center align-items-center mb-4 flex-column">
-        <div className="encabezado-tramo-etapa2">
-          <div className="nav-pe-etapa2-lado nav-pe-etapa2-lado--izq">
-            {mostrarBotonesNav && (
-              <button
-                type="button"
-                className="btn-nav-pe-etapa2"
-                onClick={() => navegarAPe(peAnterior)}
-                disabled={peAnterior === null}
-                aria-label="Ver PE anterior"
-              >
-                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" viewBox="0 0 16 16">
-                  <path
-                    fillRule="evenodd"
-                    d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"
-                  />
-                </svg>
-              </button>
-            )}
-          </div>
+      <div className="encabezado-tramo-etapa2 mb-4">
+        {/* Div 1: navegación anterior */}
+        <div className="nav-pe-etapa2-lado nav-pe-etapa2-lado--izq">
+          {mostrarBotonesNav && (
+            <button
+              type="button"
+              className="btn-nav-pe-etapa2"
+              onClick={() => navegarAPe(peAnterior)}
+              disabled={peAnterior === null}
+              aria-label="Ver PE anterior"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" viewBox="0 0 16 16">
+                <path
+                  fillRule="evenodd"
+                  d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"
+                />
+              </svg>
+            </button>
+          )}
+        </div>
 
-          <div className="encabezado-tramo-etapa2-centro">
+        {/* Div 2: contenido central (título/datos, categorías, contador) */}
+        <div className="encabezado-tramo-etapa2-centro d-flex flex-column align-items-center">
+
+          {/* Sub-div: nombre del tramo + datos */}
+          <div className="datos-tramo-etapa2 pb-3">
             <h2 className="titulo-etapa2 text-center mb-2">
               <span className={`titulo-tramo-pe-etapa2 ${esPowerStage ? 'titulo-tramo-pe-etapa2--power-stage' : ''}`}>
                 PE{numeroPE}
@@ -300,58 +304,61 @@ function TiemposEtapa2({ pe }) {
             </div>
           </div>
 
-          <div className="nav-pe-etapa2-lado nav-pe-etapa2-lado--der">
-            {mostrarBotonesNav && (
-              <button
-                type="button"
-                className="btn-nav-pe-etapa2"
-                onClick={() => navegarAPe(peSiguiente)}
-                disabled={peSiguiente === null}
-                aria-label="Ver PE siguiente"
-              >
-                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" viewBox="0 0 16 16">
-                  <path
-                    fillRule="evenodd"
-                    d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
-                  />
-                </svg>
-              </button>
-            )}
+          {/* Sub-div: botones de categorías */}
+          {categorias.length > 0 && (
+            <div className="contenedor-indice-principal mb-3">
+              <div className="botones-campeonato">
+                {categorias.map((categoria) => (
+                  <button
+                    key={categoria.clase}
+                    className={`btn-categoria-etapa2 ${categoriasOcultas.includes(categoria.clase) ? 'btn-categoria-etapa2--oculta' : ''}`}
+                    onClick={() => scrollACategoria(categoria)}
+                    title={categoriasOcultas.includes(categoria.clase) ? 'Categoría oculta' : `Ir a ${categoria.nombre_mostrar || categoria.clase}`}
+                  >
+                    {categoria.nombre_mostrar || categoria.clase}
+                  </button>
+                ))}
+                {renderizarSelectFiltroCategorias()}
+              </div>
+            </div>
+          )}
+
+          {/* Sub-div: contador */}
+          <div className="mt-3 d-flex align-items-center gap-2">
+            <span className="text-muted" style={{ fontSize: '0.9rem' }}>
+              Próxima actualización en:
+            </span>
+            <span
+              className="badge badge-contador-etapa2 bg-primary d-flex align-items-center gap-1"
+              style={{ fontSize: '0.95rem', padding: '0.4rem 0.8rem' }}
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" viewBox="0 0 16 16">
+                <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z" />
+                <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z" />
+              </svg>
+              {segundosRestantes}s
+            </span>
           </div>
         </div>
 
-        {categorias.length > 0 && (
-          <div className="contenedor-indice-principal mb-3">
-            <div className="botones-campeonato">
-              {categorias.map((categoria) => (
-                <button
-                  key={categoria.clase}
-                  className={`btn-categoria-etapa2 ${categoriasOcultas.includes(categoria.clase) ? 'btn-categoria-etapa2--oculta' : ''}`}
-                  onClick={() => scrollACategoria(categoria)}
-                  title={categoriasOcultas.includes(categoria.clase) ? 'Categoría oculta' : `Ir a ${categoria.nombre_mostrar || categoria.clase}`}
-                >
-                  {categoria.nombre_mostrar || categoria.clase}
-                </button>
-              ))}
-              {renderizarSelectFiltroCategorias()}
-            </div>
-          </div>
-        )}
-
-        <div className="mt-3 d-flex align-items-center gap-2">
-          <span className="text-muted" style={{ fontSize: '0.9rem' }}>
-            Próxima actualización en:
-          </span>
-          <span
-            className="badge badge-contador-etapa2 bg-primary d-flex align-items-center gap-1"
-            style={{ fontSize: '0.95rem', padding: '0.4rem 0.8rem' }}
-          >
-            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" viewBox="0 0 16 16">
-              <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z" />
-              <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z" />
-            </svg>
-            {segundosRestantes}s
-          </span>
+        {/* Div 3: navegación siguiente */}
+        <div className="nav-pe-etapa2-lado nav-pe-etapa2-lado--der">
+          {mostrarBotonesNav && (
+            <button
+              type="button"
+              className="btn-nav-pe-etapa2"
+              onClick={() => navegarAPe(peSiguiente)}
+              disabled={peSiguiente === null}
+              aria-label="Ver PE siguiente"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" viewBox="0 0 16 16">
+                <path
+                  fillRule="evenodd"
+                  d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
+                />
+              </svg>
+            </button>
+          )}
         </div>
       </div>
 
